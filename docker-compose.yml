@@ -58,7 +58,7 @@ services:
       - INSTANA_AGENT_ENDPOINT=${agent_endpoint}
       - INSTANA_AGENT_ENDPOINT_PORT=443
       - INSTANA_AGENT_KEY=${agent_key}
-      - INSTANA_AGENT_ZONE=nginx-dockerized-demo
+      - INSTANA_AGENT_ZONE=nginx-tracing-demo
     expose:
       - "42699"
 

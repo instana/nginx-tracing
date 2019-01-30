@@ -57,4 +57,4 @@ Naturally, all the other [NGINX capabilities of Instana](https://docs.instana.io
 
 ## Setup an Application Perspective for the Demo
 
-The simplest way is just to assign to the agent a unique zone (the `docker-compose.yml` file comes with the pre-defined `nginx-dockerized-demo`), and simply create the application to contain all calls with the `agent.zone` tag to have the value `nginx-dockerized-demo`.
+The simplest way is just to assign to the agent a unique zone (the `docker-compose.yml` file comes with the pre-defined `nginx-tracing-demo`), and simply create the application to contain all calls with the `agent.zone` tag to have the value `nginx-tracing-demo`.
