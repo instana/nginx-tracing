@@ -1,6 +1,6 @@
-# NGINX Tracing Demo
+# Instana NGINX Tracing Demo
 
-This repository contains a technology preview for Instana's NGINX's tracing functionality.
+This repository contains a technology preview for Instana's [NGINX](https://www.nginx.com/) tracing functionality.
 
 ## Disclaimer
 
