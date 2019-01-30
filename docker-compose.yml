@@ -15,7 +15,6 @@ services:
       context: ./nginx
       args:
         agent_key: ${agent_key}
-        sensor_version: ${sensor_version}
     networks:
       nginxmesh:
         aliases:
@@ -58,7 +57,7 @@ services:
       - INSTANA_AGENT_ENDPOINT=${agent_endpoint}
       - INSTANA_AGENT_ENDPOINT_PORT=443
       - INSTANA_AGENT_KEY=${agent_key}
-      - INSTANA_AGENT_ZONE=nginx-tracing-demo
+      - INSTANA_AGENT_ZONE=nginx-tracing-demo-michele
     expose:
       - "42699"
 

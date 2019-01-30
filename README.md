@@ -17,8 +17,6 @@ A `docker-compose` installation running on your machine. This demo has been crea
 Create a `.env` file in the root of the checked-out version of this repository and enter the following text, with the values adjusted as necessary:
 
 ```text
-# Current version: 0.5.0
-sensor_version=0.5.0
 agent_key=<TODO FILL UP>
 agent_endpoint=<TODO FILL UP>
 ```
