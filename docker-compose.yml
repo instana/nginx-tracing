@@ -1,0 +1,66 @@
+version: '3'
+services:
+
+  client-app:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+
+  nginx:
+    build:
+      context: ./nginx
+      args:
+        agent_key: ${agent_key}
+        sensor_version: ${sensor_version}
+    networks:
+      nginxmesh:
+        aliases:
+          - nginx-gateway
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/instana-config.json:/etc/instana-config.json
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+
+  server-app:
+    build:
+      context: ./server-app
+    networks:
+      nginxmesh:
+        aliases:
+          - server-app
+    environment:  
+      - INSTANA_DEV=1
+      - SERVER_PORT=8080
+    expose:
+      - "8080"
+
+  agent:
+    image: instana/agent:test
+    pid: "host"
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev:/dev
+      - /sys:/sys
+      - /var/log:/var/log
+    networks:
+      nginxmesh:
+        aliases:
+          - instana-agent
+    environment:
+      - INSTANA_AGENT_ENDPOINT=${agent_endpoint}
+      - INSTANA_AGENT_ENDPOINT_PORT=443
+      - INSTANA_AGENT_KEY=${agent_key}
+      - INSTANA_AGENT_ZONE=nginx-dockerized-demo
+    expose:
+      - "42699"
+
+networks:
+  nginxmesh: {}
