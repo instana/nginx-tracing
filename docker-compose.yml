@@ -55,7 +55,7 @@ services:
       - INSTANA_AGENT_ENDPOINT=${agent_endpoint}
       - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port}
       - INSTANA_AGENT_KEY=${agent_key}
-      - INSTANA_AGENT_ZONE=nginx-tracing-demo-michele
+      - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
     expose:
       - "42699"
 
