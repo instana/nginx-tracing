@@ -4,7 +4,7 @@ This repository contains a technology preview for Instana's [NGINX](https://www.
 
 ## Disclaimer
 
-*Instana NGINX tracing is currently a technology preview.*
+*Instana NGINX tracing is currently a technology preview. Any use of this technical preview, especially in production, is not supported!*
 
 We reserve ourselves the right to make it better and easier before releasing the functionality for General Availability.
 
