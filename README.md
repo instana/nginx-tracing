@@ -19,7 +19,7 @@ Create a `.env` file in the root of the checked-out version of this repository a
 ```text
 agent_key=<TODO FILL UP>
 agent_endpoint=<local ip or remote host>
-agent_endpoint_port=<443 or 4443 for local>
+agent_endpoint_port=<443 already set as default; or 4443 for local>
 ```
 
 ## Build
