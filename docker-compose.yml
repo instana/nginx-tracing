@@ -24,8 +24,6 @@ services:
       - ./nginx/instana-config.json:/etc/instana-config.json
     expose:
       - "8080"
-    ports:
-      - "8080:8080"
 
   server-app:
     build:
@@ -55,7 +53,7 @@ services:
           - instana-agent
     environment:
       - INSTANA_AGENT_ENDPOINT=${agent_endpoint}
-      - INSTANA_AGENT_ENDPOINT_PORT=443
+      - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port}
       - INSTANA_AGENT_KEY=${agent_key}
       - INSTANA_AGENT_ZONE=nginx-tracing-demo-michele
     expose:
