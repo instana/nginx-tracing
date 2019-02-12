@@ -52,10 +52,10 @@ services:
         aliases:
           - instana-agent
     environment:
-      - INSTANA_AGENT_ENDPOINT=${agent_endpoint}
+      - INSTANA_AGENT_ENDPOINT=${agent_endpoint:?No agent endpoint provided}
       - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port:-443}
-      - INSTANA_AGENT_KEY=${agent_key}
-      - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
+      - INSTANA_AGENT_KEY=${agent_key:?No agent key provided}
+      - INSTANA_AGENT_ZONE=${agent_zone:-envoy-tracing-demo}
     expose:
       - "42699"
 
