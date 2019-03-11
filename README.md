@@ -51,6 +51,8 @@ This will build and launch
 
 After the agent is bootstrapped and starts accepting spans from NGINX, the resulting traces in the Analyze view will look like the following:
 
+![Service dashboard](images/service-dashboard.png)
+
 ![Demo traces in the Analyze view](images/trace-view.png)
 
 Naturally, all the other [NGINX capabilities of Instana](https://docs.instana.io/ecosystem/nginx/) will work out of the box as well ;-)
