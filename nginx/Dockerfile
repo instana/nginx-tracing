@@ -11,7 +11,7 @@ ARG agent_key
 ENV INSTANA_AGENT_KEY=${agent_key}
 
 # Download extension from Artifactory
-RUN sensor_version=$(lynx -auth _:${INSTANA_AGENT_KEY} -dump -listonly https://artifact-public.instana.io/artifactory/shared/com/instana/libenvoy_sensor/ | grep -o 'https:.*/[0-9]\+\.[0-9]\+\.[0-9]\+/' | rev | cut -d '/' -f 2 | rev | sort -V | tail -n1); \
-    curl --user _:${INSTANA_AGENT_KEY} --silent --output /usr/local/lib/libinstana_sensor.so https://artifact-public.instana.io/artifactory/shared/com/instana/libenvoy_sensor/${sensor_version}/libenvoy_sensor-${sensor_version}.so
+RUN sensor_version=$(lynx -auth _:${INSTANA_AGENT_KEY} -dump -listonly https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/ | grep -o 'https:.*/[0-9]\+\.[0-9]\+\.[0-9]\+/' | rev | cut -d '/' -f 2 | rev | sort -V | tail -n1); \
+    curl --user _:${INSTANA_AGENT_KEY} --silent --output /usr/local/lib/libinstana_sensor.so https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/${sensor_version}/linux-amd64-libinstana_sensor.so
 
 RUN chmod 777 /usr/local/lib/libinstana_sensor.so
