@@ -39,7 +39,7 @@ services:
       - "8080"
 
   agent:
-    image: instana/agent:test
+    image: instana/agent
     pid: "host"
     privileged: true
     volumes:
