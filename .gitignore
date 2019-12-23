@@ -1,0 +1,5 @@
+.env*
+.classpath
+.project
+org.eclipse*
+nginx/*.so
