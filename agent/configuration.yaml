@@ -1,0 +1,3 @@
+com.instana.plugin.process:
+  processes:
+    - 'nginx'
