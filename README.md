@@ -110,3 +110,23 @@ This shows that the module version 1.17.3 is required for Nginx Plus R19.
 ### 0.5.4 (2019-03-20)
 
    * initial public release
+
+## Work in Progress
+
+Especially **End-User Monitoring (EUM)** is still under development. There is the following **workaround** for now:
+
+Add the line
+```
+add_header "server-timing" "intid;desc=${opentracing_context_x_instana_t}";
+```
+to `location` sections to be traced in the Nginx config.
+
+An example could be:
+```
+  location / {
+    ...
+    opentracing_trace_locations off;
+    opentracing_propagate_context;
+    add_header "server-timing" "intid;desc=${opentracing_context_x_instana_t}";
+  }
+```
