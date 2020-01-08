@@ -80,15 +80,6 @@ nginx version: nginx/1.17.3 (nginx-plus-r19)
 ```
 This shows that the module version 1.17.3 is required for Nginx Plus R19.
 
-## Nginx Binary Signature
-
-Nginx compares the OpenSource Nginx version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list. With the `binutils` package installed it is possible to read it and to find the module variant with the required binary signature:
-```
-strings ${NGINX_BINARY_OR_MODULE_PATH} | grep "^[0-9],[0-9],[0-9],[0-1]\{34\}$"
-```
-
-The typical binary signature with compatibility is `8,4,8,0011111111010111001111111111111111`.
-
 ## Release History
 
 ### 0.7.0 (2020-01-02)
@@ -138,4 +129,44 @@ An example could be:
     opentracing_propagate_context;
     add_header "server-timing" "intid;desc=${opentracing_context_x_instana_t}";
   }
+```
+
+## Debugging
+
+### Version Deprecation
+
+Older versions than 0.7.0 are not supported any more. The enhancements of this version are crucial for better support.
+
+### Nginx Binary Signature
+
+Nginx compares the OpenSource Nginx version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list. With the `binutils` package installed it is possible to read it and to find the module variant with the required binary signature:
+```
+strings ${NGINX_BINARY_OR_MODULE_PATH} | grep "^[0-9],[0-9],[0-9],[0-1]\{34\}$"
+```
+
+The typical binary signature with compatibility is `8,4,8,0011111111010111001111111111111111`.
+
+### Debug Logging Libinstana_sensor
+
+Just insert the following line in the middle of the config in `instana-config.json`:
+```
+"log_level": "debug",
+```
+
+### Firewall Config
+
+In order to reach the Instana agent via IPv4, it is required to use the correct agent hostname which will resolve to the correct IP address and **TCP port 42699** has to be open. Network debugging packages `iproute2`, `iputils-ping`, and `netcat` should be installed.
+
+Example with Nginx in a Ubuntu Docker container and the Instana agent on the host:
+```
+host# ss -tlnp    # verify agent listens to port 42699 at proper IP
+host# docker ps
+host# docker exec -it ${CONTAINER} /bin/bash
+container# apt-get update && apt-get upgrade && apt-get install \
+iproute2 iputils-ping netcat
+container# ip -s a                   # correct network
+container# ping 172.25.0.1           # ping works
+container# nc 172.25.0.1 42699       # oops, port seems to be blocked
+(UNKNOWN) [172.25.0.1] 42699 (?) : No route to host
+host$ firewall-config                # open TCP port 42699
 ```
