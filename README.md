@@ -70,6 +70,8 @@ Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the Nginx OpenT
 
 The reason for this is that we **cannot support self-compilation** or the modules from F5 which use dynamic linking to the standard C++ library and **could segfault** this way. We use a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
 
+Our Nginx Http OpenTracing modules are based on `nginx-opentracing` **v0.9.0**.
+
 There are also special packages containing `-musl-` in their name for musl libc based distributions like e.g. **Alpine Linux**. The Nginx modules with `-openresty-` in their name are for OpenResty and special suffixes containing distribution names are for Nginx from the main repository of that distribution. Suffix `_compatnfo` is required for CentOS/RHEL6.
 
 For **Nginx Plus** it is required to choose the Nginx module with the correct OpenSource Nginx version. The command `nginx -V` reveals it. Example:
@@ -106,6 +108,7 @@ This shows that the module version 1.17.3 is required for Nginx Plus R19.
 ### 0.6.0 (2019-09-06)
 
    * building the Nginx OpenTracing modules as well to fix compatibility issues
+      * using `nginx-opentracing` release `v0.9.0`
 
 ### 0.5.4 (2019-03-20)
 
