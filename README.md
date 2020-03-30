@@ -87,14 +87,14 @@ This shows that the module version 1.17.3 is required for Nginx Plus R19.
 ### 0.8.0 (2020-03-30)
 
    * added support for Nginx 1.17.8 and 1.17.9
-   * made MaxBufferedSpans configurable (default 1000)
-      * added "max_buffered_spans" JSON config entry
-   * added "server-timing" response header for end-user monitoring (EUM)
-      * Instana `nginx-opentracing` module is mandatory for this
-      * deprecates previous "add_header" directive workaround in NGINX config
-   * handling correlation part of extended X-INSTANA-L header for mobile EUM
-   * now passing HTTP extra headers in root spans
-      * requires an Instana backend update as well
+   * made MaxBufferedSpans configurable (default `1000`)
+      * added `max_buffered_spans` JSON config entry
+   * added `Server-Timing` entry (`intid`, for "INstana Trace IDentifier") response header to enable correlation with End-User Monitoring (EUM) for page loads
+      * Instana `nginx-opentracing` module is mandatory for this functionality
+      * superseeds the `add_header` directive workaround in NGINX config
+   * handling correlation part of extended `X-INSTANA-L` header for mobile EUM
+   * HTTP extra headers are captured also in root spans
+      * requires an Instana backend update (v174) for those heads to be matched by the `call.http.header` filter
 
 ### 0.7.0 (2020-01-02)
 
