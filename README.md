@@ -64,7 +64,7 @@ The simplest way is just to assign to the agent a unique zone (the `docker-compo
 ## Setup in your own environment
 
 In order to install the technology preview in your own setup, you will need to:
-1. Get the right binaries for your Nginx version
+1. [Get the right binaries](#released-binaries) for your Nginx version
 2. Copy the binaries where your Nginx server can access them
 3. Edit the Nginx configurations
 
@@ -88,6 +88,10 @@ nginx version: nginx/1.17.3 (nginx-plus-r19)
 ...
 ```
 This shows that the module version 1.17.3 is required for Nginx Plus R19.
+
+### Edit the Nginx Configurations
+
+<TODO>
 
 ## Release History
 
