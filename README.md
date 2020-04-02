@@ -61,7 +61,14 @@ Naturally, all the other [NGINX capabilities of Instana](https://docs.instana.io
 
 The simplest way is just to assign to the agent a unique zone (the `docker-compose.yml` file comes with the pre-defined `nginx-tracing-demo` zone), and simply create the application to contain all calls with the `agent.zone` tag to have the value `nginx-tracing-demo`.
 
-## Released Binaries
+## Setup in your own environment
+
+In order to install the technology preview in your own setup, you will need to:
+1. Get the right binaries for your Nginx version
+2. Copy the binaries where your Nginx server can access them
+3. Edit the Nginx configurations
+
+### Released Binaries
 
 **Link**: https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/<br/>
 **Credentials**: `_:${agent_key}`
