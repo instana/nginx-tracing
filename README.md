@@ -66,7 +66,8 @@ The simplest way is just to assign to the agent a unique zone (the `docker-compo
 In order to install the technology preview in your own setup, you will need to:
 1. [Get the right binaries](#released-binaries) for your Nginx version
 2. Copy the binaries where your Nginx server can access them
-3. Edit the Nginx configurations
+3. [Edit the Nginx configurations](#edit-the-nginx-configurations)
+4. Restart the Nginx process or [trigger a configuration reload](https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control/#controlling-nginx) sending a `reload` command
 
 ### Released Binaries
 
