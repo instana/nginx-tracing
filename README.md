@@ -61,11 +61,11 @@ Naturally, all the other [NGINX capabilities of Instana](https://docs.instana.io
 
 The simplest way is just to assign to the agent a unique zone (the `docker-compose.yml` file comes with the pre-defined `nginx-tracing-demo` zone), and simply create the application to contain all calls with the `agent.zone` tag to have the value `nginx-tracing-demo`.
 
-## Setup in your own environment
+## Setup Nginx tracing in your own environment
 
 In order to install the technology preview in your own setup, you will need to:
 1. [Get the right binaries](#released-binaries) for your Nginx version
-2. Copy the binaries where your Nginx server can access them
+2. [Copy the binaries](#copy-the-binaries) where your Nginx server can access them
 3. [Edit the Nginx configurations](#edit-the-nginx-configurations)
 4. Restart the Nginx process or [trigger a configuration reload](https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control/#controlling-nginx) sending a `reload` command
 
@@ -89,6 +89,15 @@ nginx version: nginx/1.17.3 (nginx-plus-r19)
 ...
 ```
 This shows that the module version 1.17.3 is required for Nginx Plus R19.
+
+### Copy the Binaries
+
+The two binaries you have downloaded in the previous step must be placed on a filesystem that the Nginx process can access, both in terms of locations as well as file permissions.
+
+If Nginx is running directly on the operative system, as opposed to running in a container, usually a good choice is to copy the two Instana binaries in the folder that contains the other Nginx modules.
+You can find where Nginx expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
+
+In a containerized environment, this may mean to add them to the container image, or mount the files as volumes into the container; see, for example, Docker's [bind mounts](https://docs.docker.com/storage/bind-mounts/) documentation or how to [mount volumes to pods in Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/).
 
 ### Edit the Nginx Configurations
 
