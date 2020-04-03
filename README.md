@@ -82,12 +82,15 @@ Our Nginx Http OpenTracing modules are based on `nginx-opentracing` **v0.9.0**.
 
 There are also special packages containing `-musl-` in their name for musl libc based distributions like e.g. **Alpine Linux**. The Nginx modules with `-openresty-` in their name are for OpenResty and special suffixes containing distribution names are for Nginx from the main repository of that distribution. Suffix `_compatnfo` is required for CentOS/RHEL6.
 
-For **Nginx Plus** it is required to choose the Nginx module with the correct OpenSource Nginx version. The command `nginx -V` reveals it. Example:
+For **Nginx Plus** it is required to choose the Nginx module with the correct OpenSource Nginx version.
+The command `nginx -V` reveals it:
+
 ```
 # nginx -V
 nginx version: nginx/1.17.3 (nginx-plus-r19)
 ...
 ```
+
 This shows that the module version 1.17.3 is required for Nginx Plus R19.
 
 ### Copy the Binaries
@@ -101,7 +104,63 @@ In a containerized environment, this may mean to add them to the container image
 
 ### Edit the Nginx Configurations
 
-<TODO>
+```
+# The following line adds the basic module Instana uses to get tracing data.
+# It is required that you use the version of this module built by Instana,
+# rather than the one shipped in many Nginx distros, as there are some
+# modifications in the Instana version that are required for tracing to work
+load_module modules/ngx_http_opentracing_module.so;
+
+events {}
+
+error_log /dev/stdout info;
+
+http {
+  # The following line activates tracing; without this line, Instana will
+  # receive no tracing data.
+  opentracing on;
+  error_log /dev/stdout info;
+
+  # The following line loads the Instana libsinstana_sensor library, that
+  # gets the tracing data from ngx_http_opentracing_module.so and converts
+  # them to Instana AutoTrace tracing data.
+  # The content of instana-config.json is discussed below.
+  opentracing_load_tracer /usr/local/lib/libinstana_sensor.so /etc/instana-config.json;
+
+  # If you use upstreams, Instana will automatically use them as endpoints,
+  # and it is really cool :-)
+  upstream backend {
+    server server-app:8080;
+  }
+
+  server {
+    error_log /dev/stdout info;
+    listen 8080;
+    server_name localhost;
+
+    location /static {
+      root /www/html;
+    }
+
+    location ^~ /api {
+      # Propagates the active span context for upstream requests.
+      # Without this configuration, the Instana trace will end at
+      # Nginx, and the systems downstream (those to which Nginx
+      # routes the requests) monitored by Instana will generate
+      # new, unrelated traces
+      opentracing_propagate_context;
+
+      # This configuration option prevents duplicated spans to be
+      # sent to Instana
+      opentracing_trace_locations off;
+
+      proxy_pass http://backend;
+    }
+  }
+}
+```
+
+<TODO> `instana-config.json`
 
 ## Release History
 
