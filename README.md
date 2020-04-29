@@ -64,6 +64,7 @@ The simplest way is just to assign to the agent a unique zone (the `docker-compo
 ## Setup Nginx tracing in your own environment
 
 In order to install the technology preview in your own setup, you will need to:
+
 1. [Get the right binaries](#released-binaries) for your Nginx version
 2. [Copy the binaries](#copy-the-binaries) where your Nginx server can access them
 3. [Edit the Nginx configurations](#edit-the-nginx-configurations)
@@ -71,27 +72,53 @@ In order to install the technology preview in your own setup, you will need to:
 
 ### Released Binaries
 
-**Link**: https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/<br/>
-**Credentials**: `_:${agent_key}`
+**Link**: https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/
+**HTTP Basic Auth Credentials**: `_:${agent_key}`
 
 Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the Nginx OpenTracing module `linux-amd64-nginx-${VERSION}-ngx_http_ot_module.so` are required from Instana in the **same Instana version** for standard GNU/Linux distributions.
-
-The reason for this is that we **cannot support self-compilation** or the modules from F5 which use dynamic linking to the standard C++ library and **could segfault** this way. We use a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
+The explanation for not supporting any other build of the Nginx OpenTracing module is provided [below](#Support-for-other-Nginx-OpenTracing-module-builds).
 
 Our Nginx Http OpenTracing modules are based on `nginx-opentracing` **v0.9.0**.
 
-There are also special packages containing `-musl-` in their name for musl libc based distributions like e.g. **Alpine Linux**. The Nginx modules with `-openresty-` in their name are for OpenResty and special suffixes containing distribution names are for Nginx from the main repository of that distribution. Suffix `_compatnfo` is required for CentOS/RHEL6.
+#### Which packages should I use
 
-For **Nginx Plus** it is required to choose the Nginx module with the correct OpenSource Nginx version.
-The command `nginx -V` reveals it:
+The packages that we offer depend on:
 
-```
-# nginx -V
-nginx version: nginx/1.17.3 (nginx-plus-r19)
-...
-```
+- The Nginx version, as shown by the `nginx -V` command:
 
-This shows that the module version 1.17.3 is required for Nginx Plus R19.
+  ```sh
+  # nginx -V
+  nginx version: nginx/1.17.3 (nginx-plus-r19)
+  ...
+  ```
+
+  The output above shows that the module version 1.17.3 is required for Nginx Plus R19.
+
+- The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
+- (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on our side)
+
+Distro | Version | Package page | Binaries to download
+--- | --- | --- | ---
+
+<TODO> Translate table below in the one above here
+
+Distro | Version | Nginx distro | Suffix | Nginx stable | Nginx Mainline | Openresty
+--- | --- | --- | --- | --- | --- | ---
+Alpine Linux | 3.10 | 1.16.1 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
+Alpine Linux | 3.9 | 1.14.2 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
+Alpine Linux | 3.8 | 1.14.2 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
+Amazon Linux | 2018.03 | 1.14.1 | _amazon | CentOS 6*: 1.14+, 1.16+ | CentOS 6*: 1.15+, 1.17+; nginx+ 1.15.10 (r18-p1, no suffix) | 1.13.6, 1.15.8
+Amazon Linux | 2 | N/A | - |  CentOS 7: 1.14+, 1.16+ | CentOS 7: 1.15+, 1.17+ | -
+Amazon Linux | 1 | 1.14.1 | _amazon | CentOS 6*: 1.14+, 1.16+ | CentOS 6*: 1.15+, 1.17+ | -
+CentOS | 7 | N/A | - | 1.14+, 1.16+ | 1.15+, 1.17+ | -
+CentOS/RHEL6 | 6 | N/A | - | **: 1.14+, 1.16+ | **: 1.15+, 1.17+ | -
+Ubuntu | 18.04 | 1.14.0 | _ubuntu | 1.14+, 1.16+ | 1.15+, 1.17+ | -
+Ubuntu | 16.04 | N/A (too old 1.10.3) | - | 1.14+, 1.16+ | 1.15+, 1.17+ | -
+
+*: _compatnfo suffix (without the `HAVE_TCP_FASTOPEN` compile flag)
+**: _compatnfo suffix and glibc < 2.14
+
+We use the same module for both Nginx open-source and **Nginx Plus**.
 
 ### Copy the Binaries
 
@@ -104,7 +131,7 @@ In a containerized environment, this may mean to add them to the container image
 
 ### Edit the Nginx Configurations
 
-```
+```nginx
 # The following line adds the basic module Instana uses to get tracing data.
 # It is required that you use the version of this module built by Instana,
 # rather than the one shipped in many Nginx distros, as there are some
@@ -160,7 +187,34 @@ http {
 }
 ```
 
-<TODO> `instana-config.json`
+The following is an example of `instana-config.json`:
+
+```json
+{
+  "service": "nginxtracing_nginx",
+  "agent_host": "instana-agent",
+  "agent_port": 42699,
+  "max_buffered_spans": 1000
+}
+```
+
+The configurations in the snippet above mean the following:
+
+- `service`: which name will be associated in the Instana backend with the this NGINX process.
+  If unspecified, servide names will be calculated based, for example, [HTTP host name or other means](https://docs.instana.io/application_monitoring/services/).
+- `agent_host`: the IP address or DNS name of the local host agent.
+- `agent_port`: the port on which the NGINX tracing extension will try to contact the host agent.
+  Notice that this port is _not configurable_ agent side.
+  The NGINX tracing extension allows you to configure it in case of settings requiring port forwarding or port mapping.
+- `max_buffered_spans`: The maximum amount of spans, one per request, that the NGINX tracing extension will keep locally before flush them to the agent; the default is `1000`.
+  Notice that the NGINX tracing extension will always flush the locally-buffered spans every one second.
+  This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second.
+
+### Support for other Nginx OpenTracing module builds
+
+We do not support using builds of the Nginx OpenTracing module from 3rd parties, including those supported by Nginx itself.
+The reason for requiring the Instana build of the Nginx OpenTracing module is purely technical: we **cannot support self-compilation** (that is, you building your own version, the Nginx module system is too sensitive to build flags) or the modules from F5, because they use dynamic linking to the standard C++ library and that would lead in many cases to **segfault**.
+Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
 
 ## Release History
 
@@ -215,7 +269,8 @@ Older versions than 0.7.0 are not supported any more. The enhancements of this v
 ### Nginx Binary Signature
 
 Nginx compares the OpenSource Nginx version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list. With the `binutils` package installed it is possible to read it and to find the module variant with the required binary signature:
-```
+
+```sh
 strings ${NGINX_BINARY_OR_MODULE_PATH} | grep "^[0-9],[0-9],[0-9],[0-1]\{34\}$"
 ```
 
@@ -224,7 +279,8 @@ The typical binary signature with compatibility is `8,4,8,0011111111010111001111
 ### Debug Logging Libinstana_sensor
 
 Just insert the following line in the middle of the config in `instana-config.json`:
-```
+
+```json
 "log_level": "debug",
 ```
 
@@ -233,7 +289,8 @@ Just insert the following line in the middle of the config in `instana-config.js
 In order to reach the Instana agent via IPv4, it is required to use the correct agent hostname which will resolve to the correct IP address and **TCP port 42699** has to be open. Network debugging packages `iproute2`, `iputils-ping`, and `netcat` should be installed.
 
 Example with Nginx in a Ubuntu Docker container and the Instana agent on the host:
-```
+
+```sh
 host# ss -tlnp    # verify agent listens to port 42699 at proper IP
 host# docker ps
 host# docker exec -it ${CONTAINER} /bin/bash
