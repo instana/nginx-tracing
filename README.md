@@ -97,11 +97,6 @@ The packages that we offer depend on:
 - The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
 - (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on our side)
 
-Distro | Version | Package page | Binaries to download
---- | --- | --- | ---
-
-<TODO> Translate table below in the one above here
-
 Distro | Version | Nginx distro | Suffix | Nginx stable | Nginx Mainline | Openresty
 --- | --- | --- | --- | --- | --- | ---
 Alpine Linux | 3.10 | 1.16.1 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
