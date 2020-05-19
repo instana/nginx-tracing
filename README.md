@@ -172,8 +172,8 @@ http {
       # new, unrelated traces
       opentracing_propagate_context;
 
-      # This configuration option prevents duplicated spans to be
-      # sent to Instana
+      # This configuration option prevents duplicated spans from
+      # being sent to Instana
       opentracing_trace_locations off;
 
       proxy_pass http://backend;
