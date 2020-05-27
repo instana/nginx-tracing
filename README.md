@@ -4,7 +4,7 @@ This repository contains a technology preview for Instana's [NGINX](https://www.
 
 ## Disclaimer
 
-*Instana NGINX tracing is currently a technology preview. Any use of this technical preview, especially in production, is not supported!*
+*Instana NGINX tracing is currently a technology preview. It is, however, very close to be GA, so you can already use it in production (many already do), and we will provide support for it.*
 
 We reserve ourselves the right to make it better and easier before releasing the functionality for General Availability.
 
