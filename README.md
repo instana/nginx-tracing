@@ -97,21 +97,7 @@ The packages that we offer depend on:
 - The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
 - (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on our side)
 
-Distro | Version | Nginx distro | Suffix | Nginx stable | Nginx Mainline | Openresty
---- | --- | --- | --- | --- | --- | ---
-Alpine Linux | 3.10 | 1.16.1 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
-Alpine Linux | 3.9 | 1.14.2 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
-Alpine Linux | 3.8 | 1.14.2 | _alpine | 1.14+, 1.16+ | 1.15+, 1.17+ | -
-Amazon Linux | 2018.03 | 1.14.1 | _amazon | CentOS 6*: 1.14+, 1.16+ | CentOS 6*: 1.15+, 1.17+; nginx+ 1.15.10 (r18-p1, no suffix) | 1.13.6, 1.15.8
-Amazon Linux | 2 | N/A | - |  CentOS 7: 1.14+, 1.16+ | CentOS 7: 1.15+, 1.17+ | -
-Amazon Linux | 1 | 1.14.1 | _amazon | CentOS 6*: 1.14+, 1.16+ | CentOS 6*: 1.15+, 1.17+ | -
-CentOS | 7 | N/A | - | 1.14+, 1.16+ | 1.15+, 1.17+ | -
-CentOS/RHEL6 | 6 | N/A | - | **: 1.14+, 1.16+ | **: 1.15+, 1.17+ | -
-Ubuntu | 18.04 | 1.14.0 | _ubuntu | 1.14+, 1.16+ | 1.15+, 1.17+ | -
-Ubuntu | 16.04 | N/A (too old 1.10.3) | - | 1.14+, 1.16+ | 1.15+, 1.17+ | -
-
-*: _compatnfo suffix (without the `HAVE_TCP_FASTOPEN` compile flag)
-**: _compatnfo suffix and glibc < 2.14
+Please find the required two binaries sorted by NGINX version in the separate file [BINARIES.md](BINARIES.md).
 
 We use the same module for both Nginx open-source and **Nginx Plus**.
 
