@@ -201,9 +201,9 @@ Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a
 
 ## Release History
 
-### 1.0.0-RC4
+### 1.0.0-RC4 (2020-06-17)
 
-  * added remove the need of setting `opentracing on` and `opentracing_trace_locations off`
+  * remove the need of setting `opentracing on` and `opentracing_trace_locations off`
 
 ### 0.8.0 (2020-03-30)
 
