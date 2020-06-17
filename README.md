@@ -138,9 +138,6 @@ events {}
 error_log /dev/stdout info;
 
 http {
-  # The following line activates tracing; without this line, Instana will
-  # receive no tracing data.
-  opentracing on;
   error_log /dev/stdout info;
 
   # The following line loads the Instana libsinstana_sensor library, that
@@ -148,6 +145,13 @@ http {
   # them to Instana AutoTrace tracing data.
   # The content of instana-config.json is discussed below.
   opentracing_load_tracer /usr/local/lib/libinstana_sensor.so /etc/instana-config.json;
+
+  # Propagates the active span context for upstream requests.
+  # Without this configuration, the Instana trace will end at
+  # Nginx, and the systems downstream (those to which Nginx
+  # routes the requests) monitored by Instana will generate
+  # new, unrelated traces
+  opentracing_propagate_context;
 
   # If you use upstreams, Instana will automatically use them as endpoints,
   # and it is really cool :-)
@@ -165,16 +169,16 @@ http {
     }
 
     location ^~ /api {
-      # Propagates the active span context for upstream requests.
-      # Without this configuration, the Instana trace will end at
-      # Nginx, and the systems downstream (those to which Nginx
-      # routes the requests) monitored by Instana will generate
-      # new, unrelated traces
-      opentracing_propagate_context;
+      proxy_pass http://backend;
+    }
 
-      # This configuration option prevents duplicated spans from
-      # being sent to Instana
-      opentracing_trace_locations off;
+    location ^~ /other_api {
+      set_proxy_header X-AWESOME-HEADER "truly_is_awesome";
+
+      # Using the `set_proxy_header` directive voids for this
+      # location the `opentracing_propagate_context` defined
+      # at the `http` level, so here we need to set it again
+      opentracing_propagate_context;
 
       proxy_pass http://backend;
     }
