@@ -2,6 +2,13 @@
 
 Below you find bundles that provide both the `libinstana_sensor.so` as well as the matching `ngx_http_ot_module.so` for all supported version of NGINX, NGINX Plus and OpenResty.
 
+To pick the right package, you need to know the version of NGINX, NGINX Plus or OpenResty you want to trace,
+You can find that by running the `nginx -v` command.
+
+We provide support for all packages released in the [official NGINX repository](http://nginx.org/en/linux_packages.html), both glibc-based versions (RHEL/CentOS, Ubuntu, Debian, SLES) and musl-based (Alpine Linux).
+Also, due to quirks of how NGINX packages are compiled, we sometimes need to provide multiple binaries for some other packages offered by particular distribution.
+FOr example, for some versions you may find two bundles for Alpine, one matching the package provided in the official NGINX repository, and the other based on the [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages?name=nginx&branch=edge) repository.
+
 ## NGINX Plus
 
 * R22: see [NGINX 1.19.0](#1190)
