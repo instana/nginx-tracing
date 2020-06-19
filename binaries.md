@@ -54,525 +54,229 @@ See: [Version 1.15.10](#11510)
 
 ## 1.19.0
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.19.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.19.0-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.19.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.19.0-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.19.0-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.19.0-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.19.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.19.0.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.19.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.19.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.18.0
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.18.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.18.0-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.18.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.18.0-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.18.0-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.18.0-ngx_http_ot_module_compatnfo.so)
-
-### Distro Main Repo
-
-#### Alpine Linux 3.12
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.18.0-ngx_http_ot_module_alpine.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.18.0-ngx_http_ot_module_alpine.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.18.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.18.0.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.18.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.18.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Alpine Linux 3.12](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.18.0_alpine.zip)
 
 ## 1.17.10
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.10-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.10-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.10-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.10-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.10-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.10-ngx_http_ot_module_compatnfo.so)
-
-### Distro Main Repo
-
-#### Ubuntu 20.04
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.10-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.10-ngx_http_ot_module.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.10.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.10.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.10_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.10_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.9
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.9-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.9-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.9-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.9-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.9-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.9-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.9.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.9.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.9_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.9_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.8
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.8-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.8-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.8-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.8-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.8-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.8-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.8.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.8.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.8_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.8_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.7
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.7-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.7-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.7-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.7-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.7-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.7-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.7.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.7.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.7_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.7_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.6
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.6-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.6-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.6-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.6-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.6-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.6-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.6.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.6.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.6_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.6_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.5
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.5-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.5-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.5-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.5-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.5-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.5-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.5.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.5.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.5_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.5_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.4
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.4-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.4-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.4-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.4-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.4-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.4-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.4.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.4.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.4_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.4_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.3
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.3-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.3-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.3-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.3-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.3-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.3-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.3.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.3.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.3_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.3_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.2
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.2-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.2-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.2-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.2-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.2-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.2-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.2.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.2.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.2_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.2_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.1
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.1-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.1-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.1-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.1-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.1-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.1-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.1.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.1.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.1_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.1_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.17.0
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.0-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.17.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.17.0-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.17.0-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.17.0-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.17.0.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.16.1
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.16.1-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.16.1-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.16.1-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.16.1-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.16.1-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.16.1-ngx_http_ot_module_compatnfo.so)
-
-### Distro Main Repo
-
-#### Alpine Linux 3.11/3.10
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.16.1-ngx_http_ot_module_alpine.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.16.1-ngx_http_ot_module_alpine.so)
-
-#### Amazon Linux 1/2018.03
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.16.1-ngx_http_ot_module_amazon.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.16.1-ngx_http_ot_module_amazon.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.1.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.16.1.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.1_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.16.1-ngx_http_ot_module_amazon.so)
+[Alpine Linux 3.11/3.10](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.16.1_alpine.zip)
 
 ## 1.16.0
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.16.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.16.0-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.16.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.16.0-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.16.0-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.16.0-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.16.0.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.15.12
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.15.12-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.15.12-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.15.12-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.15.12-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.15.12-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.15.12-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.12.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.15.12.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.12_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.12_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.15.10
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.15.10-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.15.10-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.15.10-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.15.10-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.15.10-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.15.10-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.10.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.15.10.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.10_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.10_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.15.8 OpenResty
 
-OpenResty 1.15.8.1 and 1.15.8.2 use the same module. 1.15.8.3 is not supported yet.
-OpenResty is only supported on Amazon Linux 2018.03.
+* [OpenResty 1.15.8.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.15.8.zip)
+  * Only supported on Amazon Linux 2018.03
+* [OpenResty 1.15.8.2](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.15.8.zip)
+  * Only supported on Amazon Linux 2018.03
 
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-openresty-1.15.8-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-openresty-1.15.8-ngx_http_ot_module.so)
+**Note:** OpenResty 1.15.8.3 is currently not supported.
 
 ## 1.15.0
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.15.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.15.0-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.15.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.15.0-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.15.0-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.15.0-ngx_http_ot_module_compatnfo.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.15.0.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## 1.14.2
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.2-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.2-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.14.2-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.14.2-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.2-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.2-ngx_http_ot_module_compatnfo.so)
-
-### Distro Main Repo
-
-#### Alpine Linux 3.9/3.8
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.14.2-ngx_http_ot_module_alpine.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.14.2-ngx_http_ot_module_alpine.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.2.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.2_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.2_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
 
 ## 1.14.1
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.1-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.1-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.14.1-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.14.1-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.1-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.1-ngx_http_ot_module_compatnfo.so)
-
-### Distro Main Repo
-
-#### CentOS/RHEL 8
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.1-ngx_http_ot_module_amazon.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.1-ngx_http_ot_module_amazon.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.1.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.1.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.1_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.1-ngx_http_ot_module_amazon.so)
+* [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
 
 ## 1.14.0
 
-### NGINX Official Repo
-
-#### Latest glibc based Linux
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.0-ngx_http_ot_module.so)
-
-#### Alpine Linux
-
-[musl-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-libinstana_sensor.so)<br/>
-[musl-nginx-1.14.0-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-musl-nginx-1.14.0-ngx_http_ot_module.so)
-
-#### CentOS/RHEL 6
-
-This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN` and can be used
-for Amazon Linux 1/2018.03 as well.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.0-ngx_http_ot_module_compatnfo.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.0-ngx_http_ot_module_compatnfo.so)
-
-### Distro Main Repo
-
-#### Ubuntu 18.04
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-nginx-1.14.0-ngx_http_ot_module_ubuntu.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-nginx-1.14.0-ngx_http_ot_module_ubuntu.so)
+* NGINX Official Repository:
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.0.zip)
+* [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.0_compatnfo.zip)
+  * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+* [Ubuntu 18.04](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.0_ubuntu.zip)
 
 ## 1.13.6 OpenResty
 
-OpenResty 1.13.6.1 and 1.13.6.2 use the same module.
-OpenResty is only supported on Amazon Linux 2018.03.
-
-[glibc-libinstana_sensor.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-libinstana_sensor.so)<br/>
-[glibc-openresty-1.13.6-ngx_http_ot_module.so](https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/1.0.0-rc4/linux-amd64-openresty-1.13.6-ngx_http_ot_module.so)
+* [OpenResty 1.13.6.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.13.6.zip)
+  * Only supported on Amazon Linux 2018.03
+* [OpenResty 1.13.6.2](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.13.6.zip)
+  * Only supported on Amazon Linux 2018.03
