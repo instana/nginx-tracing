@@ -28,6 +28,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.19.0_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.18.0
 
@@ -38,6 +39,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.18.0_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 * [Alpine Linux 3.12](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.18.0_alpine.zip)
 
 ### NGINX 1.17.10
@@ -49,6 +51,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.10_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.9
 
@@ -59,6 +62,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.9_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.8
 
@@ -69,6 +73,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.8_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.7
 
@@ -79,6 +84,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.7_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.6
 
@@ -89,6 +95,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.6_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.5
 
@@ -99,6 +106,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.5_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.4
 
@@ -109,6 +117,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.4_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.3
 
@@ -119,6 +128,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.3_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.2
 
@@ -129,6 +139,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.2_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.1
 
@@ -139,6 +150,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.1_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.17.0
 
@@ -149,6 +161,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.17.0_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.16.1
 
@@ -159,6 +172,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.1_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.1_amazon.zip)
 * [Alpine Linux 3.11/3.10](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.16.1_alpine.zip)
 
@@ -171,6 +185,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.0_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.15.12
 
@@ -181,6 +196,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.12_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.15.10
 
@@ -191,6 +207,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.10_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.15.0
 
@@ -201,6 +218,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.15.0_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 
 ### NGINX 1.14.2
 
@@ -211,6 +229,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.2_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 * [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
 
 ### NGINX 1.14.1
@@ -220,6 +239,9 @@ For example, for some versions you may find two bundles for Alpine, one matching
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.1.zip)
   * [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.1_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.1_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.1_amazon.zip)
 * [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
 
@@ -232,6 +254,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.0_compatnfo.zip)
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+    * Use NGINX for CentOS 6 as there are no separate packages.
 * [Ubuntu 18.04](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.0_ubuntu.zip)
 
 ## OpenResty
