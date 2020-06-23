@@ -234,9 +234,6 @@ For example, for some versions you may find two bundles for Alpine, one matching
 * [Amazon Linux Repository](https://aws.amazon.com/amazon-linux-ami/2018-03-packages/):
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.14.1_amazon.zip)
 
-* [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
-  * [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
-
 ### NGINX 1.14.0
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
