@@ -40,7 +40,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
- * [Alpine Linux 3.12](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.18.0_alpine.zip)
+  * [Alpine Linux 3.12](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.18.0_alpine.zip)
 
 ### NGINX 1.17.10
 
@@ -166,7 +166,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
   * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-nginx-1.16.1_amazon.zip)
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
- * [Alpine Linux 3.11/3.10](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.16.1_alpine.zip)
+  * [Alpine Linux 3.11/3.10](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.16.1_alpine.zip)
 
 ### NGINX 1.16.0
 
@@ -219,7 +219,7 @@ For example, for some versions you may find two bundles for Alpine, one matching
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
- * [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
+  * [Alpine Linux 3.9/3.8](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-musl-nginx-1.14.2_alpine.zip)
 
 ### NGINX 1.14.1
 
@@ -254,14 +254,18 @@ For example, for some versions you may find two bundles for Alpine, one matching
 
 ### OpenResty 1.15.8
 
-* [Amazon Linux Repository](https://aws.amazon.com/amazon-linux-ami/2018-03-packages/):
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
   * [OpenResty 1.15.8.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.15.8.zip)
+    * Supported only on Amazon Linux 1/2018.03
   * [OpenResty 1.15.8.2](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.15.8.zip)
+    * Supported only on Amazon Linux 1/2018.03
 
 **Note:** OpenResty 1.15.8.3 is currently not supported.
 
 ### OpenResty 1.13.6
 
-* [Amazon Linux Repository](https://aws.amazon.com/amazon-linux-ami/2018-03-packages/):
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
   * [OpenResty 1.13.6.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.13.6.zip)
+    * Supported only on Amazon Linux 1/2018.03
   * [OpenResty 1.13.6.2](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.0-rc6/linux-amd64-glibc-openresty-1.13.6.zip)
+    * Supported only on Amazon Linux 1/2018.03
