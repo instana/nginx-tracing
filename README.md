@@ -186,6 +186,7 @@ The configurations in the snippet above mean the following:
 - `service`: which name will be associated in the Instana backend with the this NGINX process.
   If unspecified, servide names will be calculated based, for example, [HTTP host name or other means](https://docs.instana.io/application_monitoring/services/).
 - `agent_host`: the IP address or DNS name of the local host agent.
+  **You must change this configuration to match the network name of the Instana agent on the same host as the NGINX process**.
 - `agent_port`: the port on which the NGINX tracing extension will try to contact the host agent.
   Notice that this port is _not configurable_ agent side.
   The NGINX tracing extension allows you to configure it in case of settings requiring port forwarding or port mapping.
