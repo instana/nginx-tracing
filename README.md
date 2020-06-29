@@ -202,9 +202,13 @@ Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a
 
 ## Release History
 
-### 1.0.0-RC4 (2020-06-17)
+### 1.0.0 (2020-06-26)
 
-  * remove the need of setting `opentracing on` and `opentracing_trace_locations off`
+   * added support for Nginx 1.17.10, 1.18.0, and 1.19.0
+   * added support for secrets in URLs configured by the agent
+   * added support for hiding synthetic calls like `nginx_status` and `api` requests
+   * set new config defaults to avoid the need for `opentracing on;` or `opentracing_trace_locations off;`
+   * now providing single file downloads with a list of [supported binaries](binaries.md) for simpler setup
 
 ### 0.8.0 (2020-03-30)
 
