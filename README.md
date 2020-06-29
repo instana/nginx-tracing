@@ -55,30 +55,30 @@ Naturally, all the other [NGINX capabilities of Instana](https://docs.instana.io
 
 The simplest way is just to assign to the agent a unique zone (the `docker-compose.yml` file comes with the pre-defined `nginx-tracing-demo` zone), and simply create the application to contain all calls with the `agent.zone` tag to have the value `nginx-tracing-demo`.
 
-## Setup Nginx tracing in your own environment
+## Setup NGINX tracing in your own environment
 
 In order to install this technology in your own setup, you will need to:
 
-1. [Get the right binaries](#released-binaries) for your Nginx version
-2. [Copy the binaries](#copy-the-binaries) where your Nginx server can access them
-3. [Edit the Nginx configurations](#edit-the-nginx-configurations)
-4. Restart the Nginx process or [trigger a configuration reload](https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control/#controlling-nginx) sending a `reload` command
+1. [Get the right binaries](#released-binaries) for your NGINX version
+2. [Copy the binaries](#copy-the-binaries) where your NGINX server can access them
+3. [Edit the NGINX configurations](#edit-the-nginx-configurations)
+4. Restart the NGINX process or [trigger a configuration reload](https://docs.nginx.com/nginx/admin-guide/basic-functionality/runtime-control/#controlling-nginx) sending a `reload` command
 
 ### Released Binaries
 
 **Link**: https://artifact-public.instana.io/artifactory/shared/com/instana/libinstana_sensor/
 **HTTP Basic Auth Credentials**: `_:${agent_key}`
 
-Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the Nginx OpenTracing module `linux-amd64-nginx-${VERSION}-ngx_http_ot_module.so` are required from Instana in the **same Instana version** for standard GNU/Linux distributions.
-The explanation for not supporting any other build of the Nginx OpenTracing module is provided [below](#Support-for-other-Nginx-OpenTracing-module-builds).
+Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the NGINX OpenTracing module `linux-amd64-nginx-${VERSION}-ngx_http_ot_module.so` are required from Instana in the **same Instana version** for standard GNU/Linux distributions.
+The explanation for not supporting any other build of the NGINX OpenTracing module is provided [below](#Support-for-other-NGINX-OpenTracing-module-builds).
 
-Our Nginx Http OpenTracing modules are based on `nginx-opentracing` **v0.9.0**.
+Our NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.9.0**.
 
 #### Which packages should I use
 
 The packages that we offer depend on:
 
-- The Nginx version, as shown by the `nginx -V` command:
+- The NGINX version, as shown by the `nginx -V` command:
 
   ```sh
   # nginx -V
@@ -86,7 +86,7 @@ The packages that we offer depend on:
   ...
   ```
 
-  The output above shows that the module version 1.17.3 is required for Nginx Plus R19.
+  The output above shows that the module version 1.17.3 is required for NGINX Plus R19.
 
 - The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
 - (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on our side)
@@ -95,19 +95,19 @@ The list of binaries and download links is available on the [Binaries](binaries.
 
 ### Copy the Binaries
 
-The two binaries you have downloaded in the previous step must be placed on a filesystem that the Nginx process can access, both in terms of locations as well as file permissions.
+The two binaries you have downloaded in the previous step must be placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
 
-If Nginx is running directly on the operating system, as opposed to running in a container, it's usually a good choice to copy the two Instana binaries into the folder that contains the other Nginx modules.
-You can find where Nginx expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
+If NGINX is running directly on the operating system, as opposed to running in a container, it's usually a good choice to copy the two Instana binaries into the folder that contains the other NGINX modules.
+You can find where NGINX expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
 
 In a containerized environment, this may mean to add them to the container image, or mount the files as volumes into the container; see, for example, Docker's [bind mounts](https://docs.docker.com/storage/bind-mounts/) documentation or how to [mount volumes to pods in Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/).
 
-### Edit the Nginx Configurations
+### Edit the NGINX Configurations
 
 ```nginx
 # The following line adds the basic module Instana uses to get tracing data.
 # It is required that you use the version of this module built by Instana,
-# rather than the one shipped in many Nginx distros, as there are some
+# rather than the one shipped in many NGINX distros, as there are some
 # modifications in the Instana version that are required for tracing to work
 load_module modules/ngx_http_opentracing_module.so;
 
@@ -126,7 +126,7 @@ http {
 
   # Propagates the active span context for upstream requests.
   # Without this configuration, the Instana trace will end at
-  # Nginx, and the systems downstream (those to which Nginx
+  # NGINX, and the systems downstream (those to which NGINX
   # routes the requests) monitored by Instana will generate
   # new, unrelated traces
   opentracing_propagate_context;
@@ -188,17 +188,17 @@ The configurations in the snippet above mean the following:
   Notice that the NGINX tracing extension will always flush the locally-buffered spans every one second.
   This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second.
 
-### Support for other Nginx OpenTracing module builds
+### Support for other NGINX OpenTracing module builds
 
-We do not support using builds of the Nginx OpenTracing module from 3rd parties, including those supported by Nginx itself.
-The reason for requiring the Instana build of the Nginx OpenTracing module is purely technical: we **cannot support self-compilation** (that is, you building your own version, the Nginx module system is too sensitive to build flags) or the modules from F5, because they use dynamic linking to the standard C++ library and that would lead in many cases to **segfault**.
-Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
+We do not support using builds of the NGINX OpenTracing module from 3rd parties, including those supported by NGINX itself.
+The reason for requiring the Instana build of the NGINX OpenTracing module is purely technical: we **cannot support self-compilation** (that is, you building your own version, the NGINX module system is too sensitive to build flags) or the modules from F5, because they use dynamic linking to the standard C++ library and that would lead in many cases to **segfault**.
+Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
 
 ## Release History
 
 ### 1.0.0 (2020-06-26)
 
-   * added support for Nginx 1.17.10, 1.18.0, and 1.19.0
+   * added support for NGINX 1.17.10, 1.18.0, and 1.19.0
    * added support for secrets in URLs configured by the agent
    * added support for hiding synthetic calls like `nginx_status` and `api` requests
    * set new config defaults to avoid the need for `opentracing on;` or `opentracing_trace_locations off;`
@@ -206,7 +206,7 @@ Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a
 
 ### 0.8.0 (2020-03-30)
 
-   * added support for Nginx 1.17.8 and 1.17.9
+   * added support for NGINX 1.17.8 and 1.17.9
    * made MaxBufferedSpans configurable (default `1000`)
       * added `max_buffered_spans` JSON config entry
    * added `Server-Timing` entry (`intid`, for "INstana Trace IDentifier") response header to enable correlation with End-User Monitoring (EUM) for page loads
@@ -218,13 +218,13 @@ Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a
 
 ### 0.7.0 (2020-01-02)
 
-   * enforcing the use of Instana Nginx OpenTracing modules in same version
+   * enforcing the use of Instana NGINX OpenTracing modules in same version
       * avoiding segfaults and incompatibilities
    * logging `libinstana_sensor` version upon module load
       * information gathering for better support
    * changed the module suffix from `ngx_http_module` to `ngx_http_ot_module`
       * providing a clear hint that this is about OpenTracing
-   * building `ngx_http_ot_module` versions until `1.17.7` and Nginx Plus R20
+   * building `ngx_http_ot_module` versions until `1.17.7` and NGINX Plus R20
    * added timestamps and prefix "[lis]" to log messages for better debugging
    * added pid to log messages
    * enforcing IPv4 in agent host name resolution
@@ -239,7 +239,7 @@ Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a
 
 ### 0.6.0 (2019-09-06)
 
-   * building the Nginx OpenTracing modules as well to fix compatibility issues
+   * building the NGINX OpenTracing modules as well to fix compatibility issues
       * using `nginx-opentracing` release `v0.9.0`
 
 ### 0.5.4 (2019-03-20)
@@ -252,9 +252,9 @@ Indeed, to avoid segfault, we use in our build of the Nginx OpenTracing module a
 
 Older versions than 0.7.0 are not supported any more. The enhancements of this version are crucial for better support.
 
-### Nginx Binary Signature
+### NGINX Binary Signature
 
-Nginx compares the OpenSource Nginx version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list. With the `binutils` package installed it is possible to read it and to find the module variant with the required binary signature:
+NGINX compares the OpenSource NGINX version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list. With the `binutils` package installed it is possible to read it and to find the module variant with the required binary signature:
 
 ```sh
 strings ${NGINX_BINARY_OR_MODULE_PATH} | grep "^[0-9],[0-9],[0-9],[0-1]\{34\}$"
@@ -274,7 +274,7 @@ Just insert the following line in the middle of the config in `instana-config.js
 
 In order to reach the Instana agent via IPv4, it is required to use the correct agent hostname which will resolve to the correct IP address and **TCP port 42699** has to be open. Network debugging packages `iproute2`, `iputils-ping`, and `netcat` should be installed.
 
-Example with Nginx in a Ubuntu Docker container and the Instana agent on the host:
+Example with NGINX in a Ubuntu Docker container and the Instana agent on the host:
 
 ```sh
 host# ss -tlnp    # verify agent listens to port 42699 at proper IP
