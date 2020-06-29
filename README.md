@@ -1,12 +1,6 @@
 # Instana NGINX Tracing Demo
 
-This repository contains a technology preview for Instana's [NGINX](https://www.nginx.com/) tracing functionality.
-
-## Disclaimer
-
-*Instana NGINX tracing is currently a technology preview. It is, however, very close to be GA, so you can already use it in production (many already do), and we will provide support for it.*
-
-We reserve ourselves the right to make it better and easier before releasing the functionality for General Availability.
+This repository contains a demo for Instana's [NGINX](https://www.nginx.com/) tracing functionality.
 
 ## Prerequisites
 
@@ -63,7 +57,7 @@ The simplest way is just to assign to the agent a unique zone (the `docker-compo
 
 ## Setup Nginx tracing in your own environment
 
-In order to install the technology preview in your own setup, you will need to:
+In order to install this technology in your own setup, you will need to:
 
 1. [Get the right binaries](#released-binaries) for your Nginx version
 2. [Copy the binaries](#copy-the-binaries) where your Nginx server can access them
