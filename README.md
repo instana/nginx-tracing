@@ -97,7 +97,7 @@ The list of binaries and download links is available on the [Binaries](binaries.
 
 The two binaries you have downloaded in the previous step must be placed on a filesystem that the Nginx process can access, both in terms of locations as well as file permissions.
 
-If Nginx is running directly on the operative system, as opposed to running in a container, usually a good choice is to copy the two Instana binaries in the folder that contains the other Nginx modules.
+If Nginx is running directly on the operating system, as opposed to running in a container, it's usually a good choice to copy the two Instana binaries into the folder that contains the other Nginx modules.
 You can find where Nginx expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
 
 In a containerized environment, this may mean to add them to the container image, or mount the files as volumes into the container; see, for example, Docker's [bind mounts](https://docs.docker.com/storage/bind-mounts/) documentation or how to [mount volumes to pods in Kubernetes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-volume-storage/).
@@ -177,14 +177,14 @@ The following is an example of `instana-config.json`:
 
 The configurations in the snippet above mean the following:
 
-- `service`: which name will be associated in the Instana backend with the this NGINX process.
-  If unspecified, servide names will be calculated based, for example, [HTTP host name or other means](https://docs.instana.io/application_monitoring/services/).
+- `service`: which name will be associated in the Instana backend with this NGINX process.
+  If unspecified, service names will be calculated based on, for example, [HTTP host name or other means](https://docs.instana.io/application_monitoring/services/).
 - `agent_host`: the IP address or DNS name of the local host agent.
   **You must change this configuration to match the network name of the Instana agent on the same host as the NGINX process**.
 - `agent_port`: the port on which the NGINX tracing extension will try to contact the host agent.
   Notice that this port is _not configurable_ agent side.
   The NGINX tracing extension allows you to configure it in case of settings requiring port forwarding or port mapping.
-- `max_buffered_spans`: The maximum amount of spans, one per request, that the NGINX tracing extension will keep locally before flush them to the agent; the default is `1000`.
+- `max_buffered_spans`: The maximum amount of spans, one per request, that the NGINX tracing extension will keep locally before flushing them to the agent; the default is `1000`.
   Notice that the NGINX tracing extension will always flush the locally-buffered spans every one second.
   This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second.
 
