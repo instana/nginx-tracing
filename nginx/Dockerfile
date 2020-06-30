@@ -12,6 +12,9 @@ ARG agent_key
 ENV INSTANA_AGENT_KEY=${agent_key}
 ENV NGINX_VERSION=1.17.6
 
+# For Alpine-based images, change the following to 'musl'
+ENV LIBC_VERSION='glibc'
+
 # Add official Nginx repository
 RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ bionic nginx" \
      >> /etc/apt/sources.list \
@@ -30,10 +33,10 @@ RUN arti_path=https://artifact-public.instana.io/artifactory/shared/com/instana/
     sensor_version=$(lynx -auth _:${INSTANA_AGENT_KEY} -dump -listonly ${arti_path} | grep -o 'https:.*/[0-9]\+\.[0-9]\+\.[0-9]\+/' | rev | cut -d '/' -f 2 | rev | sort -V | tail -n1); \
     echo "Using sensor version ${sensor_version} for NGINX ${NGINX_VERSION}."; \
     tmp_file="tmp.zip"; tmp_dir="/tmp/nginx_tracing"; mkdir -p "${tmp_dir}" && cd "${tmp_dir}" && \
-    curl --user _:${INSTANA_AGENT_KEY} --silent --output ${tmp_file} ${arti_path}${sensor_version}/linux-amd64-glibc-nginx-${NGINX_VERSION}.zip && \
+    curl --user _:${INSTANA_AGENT_KEY} --silent --output ${tmp_file} ${arti_path}${sensor_version}/linux-amd64-${LIBC_VERSION}-nginx-${NGINX_VERSION}.zip && \
     unzip ${tmp_file} && \
-    mv glibc-libinstana_sensor.so /usr/local/lib/libinstana_sensor.so && \
-    mv glibc-nginx-${NGINX_VERSION}-ngx_http_ot_module.so /usr/lib/nginx/modules/ngx_http_opentracing_module.so; \
+    mv ${LIBC_VERSION}-libinstana_sensor.so /usr/local/lib/libinstana_sensor.so && \
+    mv ${LIBC_VERSION}-nginx-${NGINX_VERSION}-ngx_http_ot_module.so /usr/lib/nginx/modules/ngx_http_opentracing_module.so; \
     cd ~; rm -Rf "${tmp_dir}"
 
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
