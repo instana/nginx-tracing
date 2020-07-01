@@ -14,7 +14,7 @@ services:
     build:
       context: ./nginx
       args:
-        download_key: ${download_key:-}
+        download_key: ${download_key}
         agent_key: ${agent_key}
         nginx_version: '1.17.2'
     networks:
