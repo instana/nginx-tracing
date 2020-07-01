@@ -14,7 +14,9 @@ services:
     build:
       context: ./nginx
       args:
+        download_key: ${download_key}
         agent_key: ${agent_key}
+        nginx_version: '1.17.2'
     networks:
       nginxmesh:
         aliases:
@@ -54,6 +56,7 @@ services:
     environment:
       - INSTANA_AGENT_ENDPOINT=${agent_endpoint:-saas-us-west-2.instana.io}
       - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port:-443}
+      - INSTANA_DOWNLOAD_KEY=${download_key}
       - INSTANA_AGENT_KEY=${agent_key}
       - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
     expose:
