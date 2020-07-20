@@ -1,14 +1,14 @@
 version: '3'
 services:
 
-  # client-app:
-  #   build:
-  #     context: ./client-app
-  #   networks:
-  #     - nginxmesh
-  #   environment:
-  #     - INSTANA_DEV=1
-  #     - target_url=http://nginx-gateway:8080/nginx-demo
+  client-app:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://kong:8080/nginx-demo
 
   kong-database:
     image: postgres:9.6
@@ -53,7 +53,7 @@ services:
         agent_key: ${agent_key}
         nginx_version: '1.17.2'
     environment:
-      KONG_PROXY_LISTEN: 0.0.0.0:8000
+      KONG_PROXY_LISTEN: 0.0.0.0:8080
       KONG_PROXY_LISTEN_SSL: 0.0.0.0:8443
       KONG_ADMIN_LISTEN: 0.0.0.0:8001
       KONG_DATABASE: postgres
@@ -92,40 +92,40 @@ services:
   #   expose:
   #     - "8080"
 
-  # server-app:
-  #   build:
-  #     context: ./server-app
-  #   networks:
-  #     nginxmesh:
-  #       aliases:
-  #         - server-app
-  #   environment:  
-  #     - INSTANA_DEV=1
-  #     - SERVER_PORT=8080
-  #   expose:
-  #     - "8080"
+  server-app:
+    build:
+      context: ./server-app
+    networks:
+      nginxmesh:
+        aliases:
+          - server-app
+    environment:  
+      - INSTANA_DEV=1
+      - SERVER_PORT=8080
+    expose:
+      - "8080"
 
-  # agent:
-  #   image: instana/agent
-  #   pid: "host"
-  #   privileged: true
-  #   volumes:
-  #     - /var/run/docker.sock:/var/run/docker.sock
-  #     - /dev:/dev
-  #     - /sys:/sys
-  #     - /var/log:/var/log
-  #   networks:
-  #     nginxmesh:
-  #       aliases:
-  #         - instana-agent
-  #   environment:
-  #     - INSTANA_AGENT_ENDPOINT=${agent_endpoint:-saas-us-west-2.instana.io}
-  #     - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port:-443}
-  #     - INSTANA_DOWNLOAD_KEY=${download_key}
-  #     - INSTANA_AGENT_KEY=${agent_key}
-  #     - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
-  #   expose:
-  #     - "42699"
+  agent:
+    image: instana/agent
+    pid: "host"
+    privileged: true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /dev:/dev
+      - /sys:/sys
+      - /var/log:/var/log
+    networks:
+      nginxmesh:
+        aliases:
+          - instana-agent
+    environment:
+      - INSTANA_AGENT_ENDPOINT=${agent_endpoint:-saas-us-west-2.instana.io}
+      - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port:-443}
+      - INSTANA_DOWNLOAD_KEY=${download_key}
+      - INSTANA_AGENT_KEY=${agent_key}
+      - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
+    expose:
+      - "42699"
 
 networks:
   nginxmesh: {}
