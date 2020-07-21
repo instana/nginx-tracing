@@ -196,6 +196,10 @@ Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a
 
 ## Release History
 
+### 1.0.1 (2020-07-21)
+
+   * added support for NGINX 1.19.1, OpenResty 1.17.8.1, 1.15.8.3
+
 ### 1.0.0 (2020-06-26)
 
    * added support for NGINX 1.17.10, 1.18.0, and 1.19.0
