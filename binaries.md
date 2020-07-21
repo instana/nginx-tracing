@@ -11,11 +11,55 @@ For example, for some versions you may find two bundles for Alpine, one matching
 
 ## NGINX Plus
 
-* R22: see [NGINX 1.19.0](#nginx-1190)
-* R21: see [NGINX 1.17.9](#nginx-1179)
-* R20: see [NGINX 1.17.6](#nginx-1176)
-* R19: see [NGINX 1.17.3](#nginx-1173)
-* R18: see [NGINX 1.15.10](#nginx-11510)
+### NGINX Plus R22
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.19.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-musl-nginx-1.19.0.zip)
+  * [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.19.0_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.19.0_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+
+### NGINX Plus R21
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.9.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-musl-nginx-1.17.9.zip)
+  * [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.9_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.9_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+
+### NGINX Plus R20
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.6.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-musl-nginx-1.17.6.zip)
+  * [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.6_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.6_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+
+### NGINX Plus R19
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.3.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-musl-nginx-1.17.3.zip)
+  * [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.3_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.17.3_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+
+### NGINX Plus R18
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.15.10.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-musl-nginx-1.15.10.zip)
+  * [CentOS/RHEL 6](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.15.10_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.0.1/linux-amd64-glibc-nginx-1.15.10_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 ## NGINX
 
