@@ -308,6 +308,8 @@ For example, for some versions you may find two bundles for Alpine, one matching
 * [OpenResty Repository](https://openresty.org/en/linux-packages.html):
   * [OpenResty 1.17.8.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.0/linux-amd64-glibc-openresty-1.17.8_compat.zip)
     * Supported only on Amazon Linux 1/2018.03
+  * [OpenResty 1.17.8.2](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.0/linux-amd64-glibc-openresty-1.17.8_compat.zip)
+    * Supported only on Amazon Linux 1/2018.03
 
 ### OpenResty 1.15.8
 
