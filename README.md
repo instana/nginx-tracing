@@ -196,6 +196,10 @@ Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a
 
 ## Release History
 
+### 1.1.1 (2020-08-28)
+
+   * added support for NGINX 1.19.2, OpenResty 1.17.8.2
+
 ### 1.1.0 (2020-07-31)
 
    * fixed the agent discovery if `/proc/$pid/sched` (`CONFIG_SCHED_DEBUG`) is not available
