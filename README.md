@@ -332,3 +332,13 @@ container# nc 172.25.0.1 42699       # oops, port seems to be blocked
 (UNKNOWN) [172.25.0.1] 42699 (?) : No route to host
 host$ firewall-config                # open TCP port 42699
 ```
+
+### Missing Sched File
+
+You see an error like this in the NGINX log:
+```
+2020-08-31 13:16:01, 7 [lis] Error: discovery failed: failed to open sched file
+```
+
+Versions `0.7.0`..`1.0.1` are affected by this and expect that there is a `/proc/$pid/sched` file. But not all kernels are compiled with `CONFIG_SCHED_DEBUG` and the PID from the parent namespace cannot be sent to the agent then.
+This has been fixed with version `1.1.0` by falling back to letting the agent find the PID from parent namespace.
