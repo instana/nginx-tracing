@@ -294,7 +294,7 @@ Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a
 
 ### Version Deprecation
 
-Older versions than 0.7.0 are not supported any more. The enhancements of this version are crucial for better support.
+Older versions than 1.0.0 are not supported any more.
 
 ### NGINX Binary Signature
 
@@ -313,6 +313,8 @@ Just insert the following line in the middle of the config in `instana-config.js
 ```json
 "log_level": "debug",
 ```
+
+Or if you configure the tracer by environment variables, set `INSTANA_DEV` to "1".
 
 ### Firewall Config
 
