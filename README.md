@@ -111,6 +111,16 @@ In a containerized environment, this may mean to add them to the container image
 # modifications in the Instana version that are required for tracing to work
 load_module modules/ngx_http_opentracing_module.so;
 
+# Whitelists environment variables used for tracer configuration to avoid
+# that NGINX wipes them. This is only needed if instana-config.json
+# should contain an empty configuration with "{}" inside to do the
+# configuration via these environment variables instead.
+env INSTANA_SERVICE_NAME;
+env INSTANA_AGENT_HOST;
+env INSTANA_AGENT_PORT;
+env INSTANA_MAX_BUFFERED_SPANS;
+env INSTANA_DEV;
+
 events {}
 
 error_log /dev/stdout info;
@@ -187,6 +197,28 @@ The configurations in the snippet above mean the following:
 - `max_buffered_spans`: The maximum amount of spans, one per request, that the NGINX tracing extension will keep locally before flushing them to the agent; the default is `1000`.
   Notice that the NGINX tracing extension will always flush the locally-buffered spans every one second.
   This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second.
+
+The alternative is to configure the tracer via environment variables. The file `instana-config.json` is still required and its contents takes precedence. So do the following:
+
+- put an empty configuration `{}` into `instana-config.json`
+- do the whitelisting of the environment variables in the NGINX configuration as shown above
+- set the environment variables before starting NGINX
+
+This method is especially useful to set the Instana agent host to the host IP in a Kubernetes cluster.
+
+The following example Kubernetes deployment YAML part shows this method:
+
+```yaml
+        env:
+        - name: INSTANA_SERVICE_NAME
+          value: "nginxtracing_nginx"
+        - name: INSTANA_AGENT_HOST
+          valueFrom:
+            fieldRef:
+              fieldPath: status.hostIP
+```
+
+For details see the [Environment Variable Reference](https://www.instana.com/docs/reference/environment_variables).
 
 ### Support for other NGINX OpenTracing module builds
 
