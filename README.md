@@ -226,6 +226,10 @@ We do not support using builds of the NGINX OpenTracing module from 3rd parties,
 The reason for requiring the Instana build of the NGINX OpenTracing module is purely technical: we **cannot support self-compilation** (that is, you building your own version, the NGINX module system is too sensitive to build flags) or the modules from F5, because they use dynamic linking to the standard C++ library and that would lead in many cases to **segfault**.
 Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
 
+### Kubernetes NGINX Ingress Tracing
+
+There is a technical preview at https://github.com/instana/ingress-nginx-tracing which simplifies the NGINX tracing configuration for Kubernetes NGINX Ingress.
+
 ## Release History
 
 ### 1.1.1 (2020-08-28)
