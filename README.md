@@ -161,9 +161,9 @@ http {
     }
 
     location ^~ /other_api {
-      set_proxy_header X-AWESOME-HEADER "truly_is_awesome";
+      proxy_set_header X-AWESOME-HEADER "truly_is_awesome";
 
-      # Using the `set_proxy_header` directive voids for this
+      # Using the `proxy_set_header` directive voids for this
       # location the `opentracing_propagate_context` defined
       # at the `http` level, so here we need to set it again
       opentracing_propagate_context;
