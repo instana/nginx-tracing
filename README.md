@@ -302,7 +302,15 @@ Older versions than 1.0.0 are not supported any more.
 
 ### NGINX Binary Signature
 
-NGINX compares the OpenSource NGINX version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list. With the `binutils` package installed it is possible to read it and to find the module variant with the required binary signature:
+NGINX compares the OpenSource NGINX version of modules to be loaded first. If it matches, then it checks a binary signature which is basically a compile feature list.
+
+With `grep` it is possible to read it and to find the module variant with the required binary signature:
+
+```sh
+grep --binary-files=text --only-matching "[0-9],[0-9],[0-9],[0-1]\{34\}" ${NGINX_BINARY_OR_MODULE_PATH}
+```
+
+If the `binutils` package is installed, then the more precise method is:
 
 ```sh
 strings ${NGINX_BINARY_OR_MODULE_PATH} | grep "^[0-9],[0-9],[0-9],[0-1]\{34\}$"
