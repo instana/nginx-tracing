@@ -356,3 +356,9 @@ You see an error like this in the NGINX log:
 
 Versions `0.7.0`..`1.0.1` are affected by this and expect that there is a `/proc/$pid/sched` file. But not all kernels are compiled with `CONFIG_SCHED_DEBUG` and the PID from the parent namespace cannot be sent to the agent then.
 This has been fixed with version `1.1.0` by falling back to letting the agent find the PID from parent namespace.
+
+### Directive `proxy_set_header` only in Server Blocks
+
+**Customer question**: We have `proxy_set_header` directives only in server blocks in the NGINX configuration. Do we have to set `opentracing_propagate_context` for all locations?
+
+**Answer**: No, it can be set at main (http), server, and location level. So just add it to the server blocks where you have the `proxy_set_header` directives.
