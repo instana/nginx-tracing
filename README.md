@@ -198,7 +198,7 @@ The configurations in the snippet above mean the following:
   Notice that the NGINX tracing extension will always flush the locally-buffered spans every one second.
   This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second.
 
-The alternative is to configure the tracer via environment variables. The file `instana-config.json` is still required and its contents takes precedence. So do the following:
+The alternative is to configure the tracer via environment variables. Those take precedence but the file `instana-config.json` is still required. So do the following:
 
 - put an empty configuration `{}` into `instana-config.json`
 - do the whitelisting of the environment variables in the NGINX configuration as shown above
