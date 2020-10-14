@@ -235,6 +235,9 @@ To download the files, use `_` as the username and a valid agent key as password
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
   * [Alpine Linux 3.11/3.10](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-musl-nginx-1.16.1_alpine.zip)
 
+* [EPEL Repository](https://fedoraproject.org/wiki/EPEL):
+  * [CentOS/RHEL 7](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-glibc-nginx-1.16.1_amazon.zip)
+
 ### NGINX 1.16.0
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
