@@ -14,6 +14,14 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX Plus
 
+### NGINX Plus R23
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-glibc-nginx-1.19.5.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-musl-nginx-1.19.5.zip)
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-glibc-nginx-1.19.5_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+
 ### NGINX Plus R22
 
 * [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
