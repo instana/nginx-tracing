@@ -64,6 +64,14 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX
 
+### NGINX 1.19.9
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-glibc-nginx-1.19.9.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-musl-nginx-1.19.9.zip)
+  * [Amazon Linux 1/2018.03](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.1/linux-amd64-glibc-nginx-1.19.9_compatnfo.zip)
+    * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
+
 ### NGINX 1.19.8
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
