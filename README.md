@@ -12,7 +12,7 @@ Create a `.env` file in the root of the checked-out version of this repository a
 
 ```text
 agent_key=<TODO FILL UP>
-agent_endpoint=<local ip or remote host; e.g., saas-us-west-2.instana.io>
+agent_endpoint=<local ip or remote host; e.g., ingress-red-saas.instana.io>
 agent_endpoint_port=<443 already set as default; or 4443 for local>
 agent_zone=<name of the zone for the agent; default: envoy-tracing-demo>
 ```
@@ -72,7 +72,7 @@ In order to install this technology in your own setup, you will need to:
 Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the NGINX OpenTracing module `linux-amd64-nginx-${VERSION}-ngx_http_ot_module.so` are required from Instana in the **same Instana version** for standard GNU/Linux distributions.
 The explanation for not supporting any other build of the NGINX OpenTracing module is provided [below](#Support-for-other-NGINX-OpenTracing-module-builds).
 
-Our NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.9.0**.
+Our NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.18.0**.
 
 #### Which packages should I use
 
@@ -231,6 +231,13 @@ Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a
 There is a technical preview at https://github.com/instana/ingress-nginx-tracing which simplifies the NGINX tracing configuration for Kubernetes NGINX Ingress.
 
 ## Release History
+
+### 1.1.2 (2021-06-18)
+
+   * updated `nginx-opentracing` to release `v0.18.0`
+      * just error logging fixes were added
+   * now logging span context variable lookup errors as debug
+      * fixes log spam when still unsupported subrequests occur
 
 ### 1.1.1 (2020-08-28)
 
