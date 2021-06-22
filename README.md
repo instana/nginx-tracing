@@ -165,7 +165,9 @@ http {
 
       # Using the `proxy_set_header` directive voids for this
       # location the `opentracing_propagate_context` defined
-      # at the `http` level, so here we need to set it again
+      # at the `http` level, so here we need to set it again.
+      # It needs to be set for every block where `proxy_set_header`
+      # is found. This can also be the case at `server` level.
       opentracing_propagate_context;
 
       proxy_pass http://backend;
@@ -173,6 +175,11 @@ http {
   }
 }
 ```
+
+**Special case** `opentracing_propagate_context`:
+
+Besides on main (`http`) level, the `opentracing_propagate_context` directive needs to be added for every block (`server` or `location`) where a `proxy_set_header` directive is set as well.
+The reason is that OpenTracing context propagation is based on `proxy_set_header` internally and it gets void by it otherwise. This is a limitation of the NGINX module API.
 
 The following is an example of `instana-config.json`:
 
