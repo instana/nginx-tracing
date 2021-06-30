@@ -14,7 +14,7 @@ Create a `.env` file in the root of the checked-out version of this repository a
 agent_key=<TODO FILL UP>
 agent_endpoint=<local ip or remote host; e.g., ingress-red-saas.instana.io>
 agent_endpoint_port=<443 already set as default; or 4443 for local>
-agent_zone=<name of the zone for the agent; default: envoy-tracing-demo>
+agent_zone=<name of the zone for the agent; default: nginx-tracing-demo>
 ```
 
 ## Build
