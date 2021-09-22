@@ -400,6 +400,16 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## OpenResty
 
+### OpenResty 1.19.9
+
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
+  * [OpenResty 1.19.9.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.2/linux-amd64-glibc-openresty-1.19.9_compat.zip)
+    * Supported only on Amazon Linux 1/2018.03
+
+* [OpenResty DockerHub containers](https://hub.docker.com/r/openresty/openresty)
+  * [OpenResty 1.19.9.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.2/linux-amd64-glibc-openresty-1.19.9.zip)
+    * Supported only for Debian based images
+
 ### OpenResty 1.19.3
 
 * [OpenResty Repository](https://openresty.org/en/linux-packages.html):
