@@ -424,6 +424,10 @@ To download the files, use `_` as the username and a valid agent key as password
   * [OpenResty 1.19.3.2](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.2/linux-amd64-glibc-openresty-1.19.3.zip)
     * Supported only for Debian based images
 
+* [3scale containers](https://quay.io/repository/3scale/s2i-openresty-centos7?tag=latest&tab=tags)
+  * [OpenResty 1.19.3.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.1.2/linux-amd64-glibc-openresty-1.19.3.zip)
+
+
 ### OpenResty 1.17.8
 
 * [OpenResty Repository](https://openresty.org/en/linux-packages.html):
