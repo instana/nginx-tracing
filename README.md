@@ -239,6 +239,11 @@ There is a technical preview at https://github.com/instana/ingress-nginx-tracing
 
 ## Release History
 
+### 1.2.0 (2021-10-14)
+
+   * improved tracing for sub-requests when the `auth_request` directive is used
+   * fixed handling of requests where X-INSTANA-L is set to zero
+
 ### 1.1.2 (2021-06-18)
 
    * updated `nginx-opentracing` to release `v0.18.0`
