@@ -141,6 +141,10 @@ http {
   # new, unrelated traces
   opentracing_propagate_context;
 
+  # Optional: This logs subrequests like e.g. created by the `auth_request`
+  # directive so that authorization requests can be traced.
+  log_subrequest on;
+
   # If you use upstreams, Instana will automatically use them as endpoints,
   # and it is really cool :-)
   upstream backend {
@@ -385,3 +389,9 @@ This has been fixed with version `1.1.0` by falling back to letting the agent fi
 **Customer question**: We have `proxy_set_header` directives only in server blocks in the NGINX configuration. Do we have to set `opentracing_propagate_context` for all locations?
 
 **Answer**: No, it can be set at main (http), server, and location level. So just add it to the server blocks where you have the `proxy_set_header` directives.
+
+### Authorization Subrequests are not traced
+
+The subrequest tracing requires the configuration entry `log_subrequest on;` at main (`http`) level.
+Versions before `1.1.2` cause log spam without that setting.
+From version `1.2.0` onwards traces from subrequests show the correct URI.
