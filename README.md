@@ -72,7 +72,7 @@ In order to install this technology in your own setup, you will need to:
 Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the NGINX OpenTracing module `linux-amd64-nginx-${VERSION}-ngx_http_ot_module.so` are required from Instana in the **same Instana version** for standard GNU/Linux distributions.
 The explanation for not supporting any other build of the NGINX OpenTracing module is provided [below](#Support-for-other-NGINX-OpenTracing-module-builds).
 
-Our NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.18.0**.
+Our NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.22.1**.
 
 #### Which packages should I use
 
@@ -335,7 +335,7 @@ There is a technical preview at https://github.com/instana/ingress-nginx-tracing
 
 ### Version Deprecation
 
-Older versions than 1.0.0 are not supported any more.
+Older versions than 1.0.0 are not supported anymore.
 
 ### NGINX Binary Signature
 
