@@ -243,6 +243,16 @@ There is a technical preview at https://github.com/instana/ingress-nginx-tracing
 
 ## Release History
 
+### 1.3.0 (2021-12-09)
+
+   * upgraded build environments
+   * dropped initial wait time of 10s before connecting to the Instana agent
+   * now dropping all spans if the agent connection is not established
+      * avoiding too delayed spans
+      * avoiding using wrongs secrets configuration
+   * reduced the interval to poll the answering Instana agent from 30s to 5s
+      * faster agent connection
+
 ### 1.2.3 (2021-11-11)
 
    * now storing trace and span IDs as hex strings internally resulting in better debug output
