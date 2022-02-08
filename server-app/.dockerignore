@@ -1,0 +1,8 @@
+.git
+.gitignore
+
+.dockerignore
+Dockerfile
+
+mvnw.cmd
+.mvn/wrapper/maven-wrapper.jar

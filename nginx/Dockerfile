@@ -37,7 +37,7 @@ RUN set -x \
               curl apt-transport-https ca-certificates iproute2 gnupg2
 
 # Add official Nginx repository
-RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ bionic nginx" \
+RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ focal nginx" \
      >> /etc/apt/sources.list \
   && curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add - \
   && apt-get update
