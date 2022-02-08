@@ -243,6 +243,17 @@ There is a technical preview at https://github.com/instana/ingress-nginx-tracing
 
 ## Release History
 
+### 1.4.0 (2022-02-04)
+
+   * migrated to a new continuous integration tool
+   * upgraded OpenTracing C++ to version 1.6.0
+   * upgraded to `nginx-opentracing` 0.22.1
+   * did further internal changes to fit into the IBM ecosystem
+
+### 1.3.1 (2022-01-05)
+
+   * identical to 1.3.0 - rebuilt 1.3.0 due to an overwritten artifact
+
 ### 1.3.0 (2021-12-09)
 
    * upgraded build environments
