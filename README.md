@@ -4,7 +4,7 @@ This repository contains a demo for Instana's [NGINX](https://www.nginx.com/) tr
 
 ## Prerequisites
 
-A `docker-compose` and a Maven (`mvn`) installation running on your machine. This demo has been created and tested on Mac OS X with `docker-compose` and `docker-machine`.
+A `docker-compose` installation running on your machine. This demo has been created and tested on Mac OS X with `docker-compose` and `docker-machine`.
 
 ## Configure
 
