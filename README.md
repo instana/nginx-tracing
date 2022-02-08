@@ -17,23 +17,10 @@ agent_endpoint_port=<443 already set as default; or 4443 for local>
 agent_zone=<name of the zone for the agent; default: nginx-tracing-demo>
 ```
 
-## Build
+## Build & Launch
 
 ```bash
-pushd client-app
-./mvnw clean package
-popd
-
-pushd server-app
-./mvnw clean package
-popd
-
 docker-compose build
-```
-
-## Launch
-
-```bash
 docker-compose up
 ```
 
