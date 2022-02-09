@@ -59,30 +59,30 @@ In order to install this technology in your own setup, you will need to:
 Since version 0.7.0, both `linux-amd64-libinstana_sensor.so` and the NGINX OpenTracing module `linux-amd64-nginx-${VERSION}-ngx_http_ot_module.so` are required from Instana in the **same Instana version** for standard GNU/Linux distributions.
 The explanation for not supporting any other build of the NGINX OpenTracing module is provided [below](#Support-for-other-NGINX-OpenTracing-module-builds).
 
-Our NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.22.1**.
+The NGINX Http OpenTracing modules are based on `nginx-opentracing` **v0.22.1**.
 
-#### Which packages should I use
+#### Which packages should be used
 
-The packages that we offer depend on:
+The packages that Instana offers depend on:
 
 - The NGINX version, as shown by the `nginx -V` command:
 
   ```sh
   # nginx -V
-  nginx version: nginx/1.17.3 (nginx-plus-r19)
+  nginx version: nginx/1.21.3 (nginx-plus-r25-p1)
   ...
   ```
 
-  The output above shows that the module version 1.17.3 is required for NGINX Plus R19.
+  The output above shows that the module version 1.21.3 is required for NGINX Plus R25 P1.
 
 - The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
-- (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on our side)
+- (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on Instana side)
 
 The list of binaries and download links is available on the [Binaries](binaries.md) page.
 
 ### Copy the Binaries
 
-The two binaries you have downloaded in the previous step must be placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
+The two binaries downloaded and extracted in the previous step must be placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
 
 If NGINX is running directly on the operating system, as opposed to running in a container, it's usually a good choice to copy the two Instana binaries into the folder that contains the other NGINX modules.
 You can find where NGINX expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
@@ -92,16 +92,8 @@ In a containerized environment, this may mean to add them to the container image
 ### Edit the NGINX Configurations
 
 ```nginx
-# The following line adds the basic module Instana uses to get tracing data.
-# It is required that you use the version of this module built by Instana,
-# rather than the one shipped in many NGINX distros, as there are some
-# modifications in the Instana version that are required for tracing to work
 load_module modules/ngx_http_opentracing_module.so;
 
-# Whitelists environment variables used for tracer configuration to avoid
-# that NGINX wipes them. This is only needed if instana-config.json
-# should contain an empty configuration with "{}" inside to do the
-# configuration via these environment variables instead.
 env INSTANA_SERVICE_NAME;
 env INSTANA_AGENT_HOST;
 env INSTANA_AGENT_PORT;
@@ -156,7 +148,7 @@ http {
 
       # Using the `proxy_set_header` directive voids for this
       # location the `opentracing_propagate_context` defined
-      # at the `http` level, so here we need to set it again.
+      # at the `http` level, so here it needs to be set again.
       # It needs to be set for every block where `proxy_set_header`
       # is found. This can also be the case at `server` level.
       opentracing_propagate_context;
@@ -193,8 +185,8 @@ The configurations in the snippet above mean the following:
   Notice that this port is _not configurable_ agent side.
   The NGINX tracing extension allows you to configure it in case of settings requiring port forwarding or port mapping.
 - `max_buffered_spans`: The maximum amount of spans, one per request, that the NGINX tracing extension will keep locally before flushing them to the agent; the default is `1000`.
-  Notice that the NGINX tracing extension will always flush the locally-buffered spans every one second.
-  This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second.
+  The NGINX tracing extension will always flush the locally-buffered spans every one second.
+  This setting allows you to reduce the amount of local buffering when your NGINX server is serving more than `1000` requests per second and you want to reduce the memory footprint of your NGINX server by flushing the tracing data faster.
 
 The alternative is to configure the tracer via environment variables. Those take precedence but the file `instana-config.json` is still required. So do the following:
 
@@ -220,9 +212,9 @@ For details see the [Environment Variable Reference](https://www.instana.com/doc
 
 ### Support for other NGINX OpenTracing module builds
 
-We do not support using builds of the NGINX OpenTracing module from 3rd parties, including those supported by NGINX itself.
-The reason for requiring the Instana build of the NGINX OpenTracing module is purely technical: we **cannot support self-compilation** (that is, you building your own version, the NGINX module system is too sensitive to build flags) or the modules from F5, because they use dynamic linking to the standard C++ library and that would lead in many cases to **segfault**.
-Indeed, to avoid segfault, we use in our build of the NGINX OpenTracing module a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
+Using builds of the NGINX OpenTracing module from 3rd parties, including those supported by NGINX itself, are not supported.
+The reasons for requiring the Instana build of the NGINX OpenTracing module are technical: **Self-compilation is not supported** (that is, you building your own version) as that would strain unduly Instana support to try and figure out what in the compilation process goes wrong in entirely different and unpredictable setups; similarly, the modules provided by F5 are not supported, because those lack functionality that Instana tracing needs and those use dynamic linking to the standard C++ library and that would lead in many cases to **segfault**.
+Indeed, to avoid segfault, the Instana NGINX OpenTracing module is built including a statically linked standard C++ library for unifying testing and for the benefit of modern C++ code even on older distributions.
 
 ### Kubernetes NGINX Ingress Tracing
 
