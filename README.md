@@ -36,7 +36,7 @@ After the agent is bootstrapped and starts accepting spans from NGINX, the resul
 
 ![Demo traces in the Analyze view](images/trace-view.png)
 
-Naturally, all the other [NGINX capabilities of Instana](https://docs.instana.io/ecosystem/nginx/) will work out of the box as well ;-)
+Naturally, all the other [NGINX capabilities of Instana](https://www.ibm.com/docs/en/obi/current?topic=technologies-monitoring-nginx) will work out of the box as well ;-)
 
 ## Setup an Application Perspective for the Demo
 
@@ -178,7 +178,7 @@ The following is an example of `instana-config.json`:
 The configurations in the snippet above mean the following:
 
 - `service`: which name will be associated in the Instana backend with this NGINX process.
-  If unspecified, service names will be calculated based on, for example, [HTTP host name or other means](https://docs.instana.io/application_monitoring/services/).
+  If unspecified, service names will be calculated based on, for example, [HTTP host name or other means](https://www.ibm.com/docs/en/obi/current?topic=applications-services).
 - `agent_host`: the IP address or DNS name of the local host agent.
   **You must change this configuration to match the network name of the Instana agent on the same host as the NGINX process**.
 - `agent_port`: the port on which the NGINX tracing extension will try to contact the host agent.
@@ -208,7 +208,7 @@ The following example Kubernetes deployment YAML part shows this method:
               fieldPath: status.hostIP
 ```
 
-For details see the [Environment Variable Reference](https://www.instana.com/docs/reference/environment_variables).
+For details see the [Environment Variable Reference](https://www.ibm.com/docs/en/obi/current?topic=references-environment-variables).
 
 ### Support for other NGINX OpenTracing module builds
 
