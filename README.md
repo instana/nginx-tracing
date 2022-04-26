@@ -224,13 +224,8 @@ There is a technical preview at https://github.com/instana/ingress-nginx-tracing
 
 ### 1.6.0 (2022-04-26)
 
-   * Replaced Bazel with CMake, moved  build configurations to CMake
-   * Removed Jinja2 pinned version from images setup
-   * Changed installation method for gcovr from python pip to apt-get.
-   * Fixes for vulnerabilities: CVE-2022-21712, CVE-2022-21716
-   * Improved PR pipeline: set pr resource metadata as pr-pipeline variables
-   * Improve quality of build and CI scripts
-   * Introduced debug log level for ignored fields in discovery response
+   * Consolidate build system and CI/CD pipelines
+   * Changed log level for ignored JSON fields in discovery response from warn to debug
 
 ### 1.4.0 (2022-02-04)
 
