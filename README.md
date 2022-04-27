@@ -222,6 +222,11 @@ There is a technical preview at https://github.com/instana/ingress-nginx-tracing
 
 ## Release History
 
+### 1.6.0 (2022-04-26)
+
+   * Consolidate build system and CI/CD pipelines
+   * Changed log level for ignored JSON fields in discovery response from warn to debug
+
 ### 1.4.0 (2022-02-04)
 
    * migrated to a new continuous integration tool
