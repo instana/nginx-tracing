@@ -218,7 +218,7 @@ Indeed, to avoid segfault, the Instana NGINX OpenTracing module is built includi
 
 ### Kubernetes Ingress NGINX and NGINX Tracing
 
-The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=kubernetes-instana-autotrace-webhook) is able to automatically configure distributed tracing for Ingress NGINX and NGINX on Kubernetes and OpenShift.
+The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=kubernetes-instana-autotrace-webhook) can automatically configure distributed tracing for Ingress NGINX and NGINX on Kubernetes and OpenShift.
 
 ## Release History
 
