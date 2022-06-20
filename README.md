@@ -222,6 +222,15 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.7.0 (2022-06-20)
+
+   * W3C Trace Context: truncate 128 bit IDs to 64 bit
+   * Add missing NGINX 1.22.0 support
+   * Use "tracing" config from agent announce response, fall back to legacy extra headers
+   * Support ipv4 and ipv6 addresses to connect to Instana agent
+   * Miscellaneous minor code refactoring and improvements
+   * Improved build times and ergonomics
+
 ### 1.6.0 (2022-04-26)
 
    * Consolidate build system and CI/CD pipelines
