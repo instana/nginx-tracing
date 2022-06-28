@@ -222,6 +222,11 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.7.1 (2022-06-29)
+
+  * Fix discovery response bug when tracing section contains additional
+    fields not used by tracer.
+
 ### 1.7.0 (2022-06-20)
 
    * W3C Trace Context: truncate 128 bit IDs to 64 bit
