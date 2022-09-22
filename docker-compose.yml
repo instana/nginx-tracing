@@ -41,20 +41,21 @@ services:
       - "8080"
 
   agent:
-    image: instana/agent
+    image: icr.io/instana/agent
     pid: "host"
     privileged: true
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /dev:/dev
-      - /sys:/sys
-      - /var/log:/var/log
+      - /var/run:/var/run
+      - /run:/run
+      - /dev:/dev:ro
+      - /sys:/sys:ro
+      - /var/log:/var/log:ro
     networks:
       nginxmesh:
         aliases:
           - instana-agent
     environment:
-      - INSTANA_AGENT_ENDPOINT=${agent_endpoint:-saas-us-west-2.instana.io}
+      - INSTANA_AGENT_ENDPOINT=${agent_endpoint:-ingress-red-saas.instana.io}
       - INSTANA_AGENT_ENDPOINT_PORT=${agent_endpoint_port:-443}
       - INSTANA_DOWNLOAD_KEY=${download_key}
       - INSTANA_AGENT_KEY=${agent_key}
