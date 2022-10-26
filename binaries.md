@@ -14,6 +14,18 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX Plus
 
+### NGINX Plus R27
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.21.6.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.21.6.zip)
+
+### NGINX Plus R26
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.21.5.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.21.5.zip)
+
 ### NGINX Plus R25
 
 * [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
@@ -80,6 +92,39 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX
 
+### NGINX 1.23.2
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.23.2.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.23.2.zip)
+
+### NGINX 1.23.1
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.23.1.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.23.1.zip)
+
+### NGINX 1.23.0
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.23.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.23.0.zip)
+
+### NGINX 1.22.1
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.22.1.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.22.1.zip)
+
+* [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
+  * [Alpine Linux 3.16](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.22.1_alpine.zip)
+
+### NGINX 1.22.0
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.22.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.22.0.zip)
+
 ### NGINX 1.21.6
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
@@ -145,7 +190,7 @@ To download the files, use `_` as the username and a valid agent key as password
     * This NGINX variant is compiled without `NGX_HAVE_TCP_FASTOPEN`.
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
-  * [Alpine Linux 3.14](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.20.2_alpine.zip)
+  * [Alpine Linux 3.14/3.15](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.20.2_alpine.zip)
 
 ### NGINX 1.20.1
 
@@ -442,6 +487,16 @@ To download the files, use `_` as the username and a valid agent key as password
   * [Ubuntu 18.04](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.14.0_ubuntu.zip)
 
 ## OpenResty
+
+### OpenResty 1.21.4
+
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
+  * [OpenResty 1.21.4.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-openresty-1.21.4_compat.zip)
+    * Supported only on Amazon Linux and CentOS
+
+* [OpenResty DockerHub containers](https://hub.docker.com/r/openresty/openresty)
+  * [OpenResty 1.21.4.1 Debian](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-openresty-1.21.4.zip)
+  * [OpenResty 1.21.4.1 CentOS](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-openresty-1.21.4_compat.zip)
 
 ### OpenResty 1.19.9
 
