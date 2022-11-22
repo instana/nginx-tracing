@@ -5,7 +5,7 @@ Below you find bundles that provide both the `libinstana_sensor.so` as well as t
 To pick the right package, you need to know the version of NGINX, NGINX Plus or OpenResty you want to trace.
 You can find that by running the `nginx -v` command.
 
-We provide support for all packages released in the [official NGINX repository](http://nginx.org/en/linux_packages.html), both glibc-based versions (RHEL/CentOS, Ubuntu, Debian, SLES) and musl-based (Alpine Linux).
+All packages released in the [official NGINX repository](http://nginx.org/en/linux_packages.html) are supported, including both glibc-based versions (RHEL/CentOS, Ubuntu, Debian, SLES) and musl-based (Alpine Linux). **Custom builds of NGINX are not supported due to issues with binary compatibility.**
 Also, due to quirks of how NGINX packages are compiled, we sometimes need to provide multiple binaries for some other packages offered by particular distribution.
 For example, for some versions you may find two bundles for Alpine, one matching the package provided in the official NGINX repository, and the other based on the [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages?name=nginx&branch=edge) repository.
 
