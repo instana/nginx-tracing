@@ -14,6 +14,12 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX Plus
 
+### NGINX Plus R28
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.23.2.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.23.2.zip)
+
 ### NGINX Plus R27
 
 * [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
@@ -75,6 +81,12 @@ To download the files, use `_` as the username and a valid agent key as password
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.15.10.zip)
 
 ## NGINX
+
+### NGINX 1.23.3
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-glibc-nginx-1.23.3.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.7.1/linux-amd64-musl-nginx-1.23.3.zip)
 
 ### NGINX 1.23.2
 
