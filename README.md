@@ -222,6 +222,12 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.8.2 (2023-07-17)
+
+  * Add support for NGINX 1.24.0, 1.23.4, 1.25.0, 1.25.1
+  * Add support for opentracing 0.30.0 and 0.31.0
+  * Add support for ingress-nginx controller-v1.8.0
+
 ### 1.8.1 (2023-03-23)
 
   * Add support for NGINX 1.15.3
