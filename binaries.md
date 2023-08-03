@@ -82,6 +82,30 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX
 
+### NGINX 1.25.1
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-glibc-nginx-1.25.1.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-musl-nginx-1.25.1.zip)
+
+### NGINX 1.25.0
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-glibc-nginx-1.25.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-musl-nginx-1.25.0.zip)
+
+### NGINX 1.24.0
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-glibc-nginx-1.24.0.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-musl-nginx-1.24.0.zip)
+
+### NGINX 1.23.4
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-glibc-nginx-1.23.4.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.8.2/linux-amd64-musl-nginx-1.23.4.zip)
+
 ### NGINX 1.23.3
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
