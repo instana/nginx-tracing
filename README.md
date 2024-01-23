@@ -222,6 +222,11 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.8.3 (2024-01-22)
+
+  * Security fixes: strlen security fix, fix for CVE-2023-46137 
+  * CI/CD pipelines: consolidate proactive support and sonarqube coverage
+
 ### 1.8.2 (2023-07-17)
 
   * Add support for NGINX 1.24.0, 1.23.4, 1.25.0, 1.25.1
