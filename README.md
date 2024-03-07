@@ -222,6 +222,10 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.9.0 (2024-03-07)
+
+  * New Feature: support of INSTANA_LOG_LEVEL
+
 ### 1.8.3 (2024-01-22)
 
   * Security fixes: strlen security fix, fix for CVE-2023-46137 
