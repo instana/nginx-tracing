@@ -47,9 +47,13 @@ services:
     volumes:
       - /var/run:/var/run
       - /run:/run
-      - /dev:/dev:ro
-      - /sys:/sys:ro
-      - /var/log:/var/log:ro
+      - /dev:/dev
+      - /sys:/sys
+      - /var/log:/var/log
+      # Include the File.cfg so spans are written to disk. We use them to verify which spans have been sent to the agent.
+      - ./agent/com.instana.agent.main.sender.File.cfg:/opt/instana/agent/etc/instana/com.instana.agent.main.sender.File.cfg
+      # Mount the logs directly so we can directly access the span-*.log files to check the produced spans.
+      - ./agent/logs:/opt/instana/agent/data/log
     networks:
       nginxmesh:
         aliases:
@@ -60,6 +64,11 @@ services:
       - INSTANA_DOWNLOAD_KEY=${download_key}
       - INSTANA_AGENT_KEY=${agent_key}
       - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
+    healthcheck:
+      test: ["CMD", "curl", "localhost:42699"]
+      interval: 8s
+      timeout: 10s
+      retries: 5
     expose:
       - "42699"
 
