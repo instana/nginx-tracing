@@ -24,6 +24,9 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/instana-config.json:/etc/instana-config.json
+      # Include the following lines to override the nginx module, for local testing
+      #- ./nginx/ngx_http_opentracing_module.so:/opt/instana/nginx/ngx_http_opentracing_module.so
+      #- ./nginx/ngx_http_opentracing_module.so:/usr/lib/nginx/modules/ngx_http_opentracing_module.so
     expose:
       - "8080"
 
