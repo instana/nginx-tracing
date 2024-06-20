@@ -3,3 +3,4 @@
 .project
 org.eclipse*
 nginx/*.so
+agent/logs/*.log
