@@ -25,8 +25,8 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/instana-config.json:/etc/instana-config.json
       # Include the following lines to override the nginx module, for local testing
-      #- ./nginx/ngx_http_opentracing_module.so:/opt/instana/nginx/ngx_http_opentracing_module.so
-      #- ./nginx/ngx_http_opentracing_module.so:/usr/lib/nginx/modules/ngx_http_opentracing_module.so
+      #- ./nginx/ngx_http_opentracing_module.so:/opt/instana/nginx/ngx_http_opentracing_module.so:ro
+      #- ./nginx/ngx_http_opentracing_module.so:/usr/lib/nginx/modules/ngx_http_opentracing_module.so:ro
     expose:
       - "8080"
 
@@ -50,11 +50,8 @@ services:
     volumes:
       - /var/run:/var/run
       - /run:/run
-      - /dev:/dev
-      - /sys:/sys
-      - /var/log:/var/log
       # Include the File.cfg so spans are written to disk. We use them to verify which spans have been sent to the agent.
-      - ./agent/com.instana.agent.main.sender.File.cfg:/opt/instana/agent/etc/instana/com.instana.agent.main.sender.File.cfg
+      - ./agent/com.instana.agent.main.sender.File.cfg:/opt/instana/agent/etc/instana/com.instana.agent.main.sender.File.cfg:ro
       # Mount the logs directly so we can directly access the span-*.log files to check the produced spans.
       - ./agent/logs:/opt/instana/agent/data/log
     networks:
