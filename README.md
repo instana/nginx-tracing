@@ -30,7 +30,9 @@ This will build and launch
 - `nginx` service, which routes all incoming requests to the ...
 - `server-app` service, a simple Spring Boot application that returns `200` to any HTTP request.
 
-After the agent is bootstrapped and starts accepting spans from NGINX, the resulting traces are logged into files named `spans-<timestamp_ns>` into the directory `agent/logs` and in the Analyze view will look like the following:
+After the agent is bootstrapped and starts accepting spans from NGINX, the resulting traces are logged into files named `spans-<timestamp_ns>` in the directory `agent/logs`.
+
+In the Analyze view this looks like the following:
 
 ![Service dashboard](images/service-dashboard.png)
 
