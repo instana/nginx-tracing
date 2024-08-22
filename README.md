@@ -226,7 +226,7 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ### 1.9.0 (2024-03-07)
 
-  * New Feature: support of INSTANA_LOG_LEVEL
+  * New Feature: support of `INSTANA_LOG_LEVEL`
 
 ### 1.8.3 (2024-01-22)
 
