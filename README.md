@@ -154,6 +154,14 @@ http {
       # It needs to be set for every block where `proxy_set_header`
       # is found. This can also be the case at `server` level.
       opentracing_propagate_context;
+      
+      # Using the `opentracing_remove_duplication` command enables the
+      # removal of the duplication of Server-Timing Header in the NGINX response.
+      # This duplication may occur if more than one tracer is involved in the
+      # the process chain of a request.
+      # The command can be inserted in the following contexts: http, server,
+      # location, backend.
+      opentracing_remove_duplication on;
 
       proxy_pass http://backend;
     }
@@ -223,6 +231,11 @@ Indeed, to avoid segfault, the Instana NGINX OpenTracing module is built includi
 The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=kubernetes-instana-autotrace-webhook) can automatically configure distributed tracing for Ingress NGINX and NGINX on Kubernetes and OpenShift.
 
 ## Release History
+
+### 1.9.1 (2024-08-22)
+
+  * Bug fix: Upper-case for `Server-Timing` header
+  * New Feature: Add command "`opentracing_remove_duplication`", to enable removal of duplicated `Server-Timing` headers in Nginx response.
 
 ### 1.9.0 (2024-03-07)
 
