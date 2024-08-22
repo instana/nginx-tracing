@@ -155,12 +155,12 @@ http {
       # is found. This can also be the case at `server` level.
       opentracing_propagate_context;
       
-      # Using the `opentracing_remove_duplication` command enables the
-      # removal of the duplication of Server-Timing Header in the NGINX response.
+      # The `opentracing_remove_duplication` directive enables the
+      # removal of the duplication of the Server-Timing header in the NGINX response.
       # This duplication may occur if more than one tracer is involved in the
       # the process chain of a request.
-      # The command can be inserted in the following contexts: http, server,
-      # location, backend.
+      # The directive can be inserted in the following contexts: http, server,
+      # location, and upstream.
       opentracing_remove_duplication on;
 
       proxy_pass http://backend;
@@ -235,7 +235,7 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 ### 1.9.1 (2024-08-22)
 
   * Bug fix: Upper-case for `Server-Timing` header
-  * New Feature: Add command "`opentracing_remove_duplication`", to enable removal of duplicated `Server-Timing` headers in Nginx response.
+  * New Feature: Add directive "`opentracing_remove_duplication`", to enable removal of duplicated `Server-Timing` headers in Nginx response.
 
 ### 1.9.0 (2024-03-07)
 
