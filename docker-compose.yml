@@ -8,7 +8,7 @@ services:
       - nginxmesh
     environment:
       - INSTANA_DEV=1
-      - target_url=http://nginx-gateway:8080/nginx-demo
+      - target_url=http://nginx-gateway:8090/nginx-demo
 
   nginx:
     build:
