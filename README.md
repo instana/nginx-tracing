@@ -20,8 +20,7 @@ agent_zone=<name of the zone for the agent; default: nginx-tracing-demo>
 ## Build & Launch
 
 ```bash
-docker-compose build
-docker-compose up
+docker-compose down; docker-compose up --build
 ```
 
 This will build and launch
@@ -134,7 +133,7 @@ http {
 
   server {
     error_log /dev/stdout info;
-    listen 8080;
+    listen 8090;
     server_name localhost;
 
     location /static {
