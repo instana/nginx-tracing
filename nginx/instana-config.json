@@ -2,5 +2,6 @@
   "service": "nginxtracing_nginx",
   "agent_host": "instana-agent",
   "agent_port": 42699,
+  "log_level": "debug",
   "max_buffered_spans": 1000
 }

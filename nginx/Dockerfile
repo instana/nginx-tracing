@@ -1,3 +1,6 @@
+# Using docker build command:
+# docker build --build-arg download_key=$INSTANA_AGENT_KEY -t rhel-ngx-1.20-tracing .
+
 FROM ubuntu:20.04 AS tracing_dependencies
 
 RUN set -x \
@@ -7,7 +10,7 @@ RUN set -x \
 
 ARG download_key
 ARG agent_key
-ARG nginx_version
+ARG nginx_version=1.20.1
 # For Alpine-based images, change the following to 'musl'
 ARG libc_version=glibc
 
@@ -29,30 +32,13 @@ RUN download_key=$([ ! -z "${INSTANA_DOWNLOAD_KEY}" ] && echo "${INSTANA_DOWNLOA
     mv ${LIBC_VERSION}-libinstana_sensor.so /opt/instana/nginx/libinstana_sensor.so && \
     mv ${LIBC_VERSION}-nginx-${NGINX_VERSION}-ngx_http_ot_module.so /opt/instana/nginx/ngx_http_opentracing_module.so;
 
-FROM ubuntu:20.04
-
-RUN set -x \
-  && apt-get update \
-  && apt-get install --no-install-recommends --no-install-suggests -y \
-              curl apt-transport-https ca-certificates iproute2 gnupg2
-
-# Add official Nginx repository
-RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ focal nginx" \
-     >> /etc/apt/sources.list \
-  && curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add - \
-  && apt-get update
-
-ARG nginx_version
-ENV NGINX_VERSION=${nginx_version}
-
-# Install Nginx from official Nginx repository
-RUN nginx_version=`apt-cache madison nginx | cut -d '|' -f2 \
-     | tr -d "[:blank:]" | grep --fixed-strings "${NGINX_VERSION}"` \
-  && apt-get install nginx=${nginx_version} \
-  && rm -f /etc/nginx/nginx.conf \
-  && rm -Rf /etc/nginx/conf.d
+# Prepare target image
+FROM registry.access.redhat.com/ubi8/nginx-120
 
 COPY --from=tracing_dependencies /opt/instana/nginx/libinstana_sensor.so /usr/local/lib/instana/libinstana_sensor.so
-COPY --from=tracing_dependencies /opt/instana/nginx/ngx_http_opentracing_module.so /usr/lib/nginx/modules/ngx_http_opentracing_module.so
+COPY --from=tracing_dependencies /opt/instana/nginx/ngx_http_opentracing_module.so /usr/share/nginx/modules/ngx_http_opentracing_module.so
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY instana-config.json /etc/nginx/instana-config.json
+COPY backend.conf /opt/app-root/etc/nginx.d/backend.conf
 
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]

@@ -2,17 +2,9 @@
 #   * Official English Documentation: http://nginx.org/en/docs/
 #   * Official Russian Documentation: http://nginx.org/ru/docs/
 
-load_module modules/ngx_http_opentracing_module.so;
 
-# Whitelist environment variables for Instana tracer configuration
-env INSTANA_SERVICE_NAME;
-env INSTANA_AGENT_HOST;
-env INSTANA_AGENT_PORT;
-env INSTANA_MAX_BUFFERED_SPANS;
-env INSTANA_DEV;
-
-worker_processes 1;
-error_log /dev/stdout info;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
 pid /run/nginx.pid;
 
 # Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.
@@ -28,9 +20,6 @@ http {
                       '"$http_user_agent" "$http_x_forwarded_for"';
 
     access_log  /var/log/nginx/access.log  main;
-
-    opentracing_load_tracer /usr/local/lib/instana/libinstana_sensor.so /etc/nginx/instana-config.json;
-    opentracing_propagate_context;
 
     sendfile            on;
     tcp_nopush          on;

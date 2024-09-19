@@ -16,7 +16,7 @@ services:
       args:
         download_key: ${download_key}
         agent_key: ${agent_key}
-        nginx_version: '1.21.6'
+        nginx_version: '1.20.1'
     networks:
       nginxmesh:
         aliases:
