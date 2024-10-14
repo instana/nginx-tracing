@@ -77,14 +77,34 @@ The packages that Instana offers depend on:
 
   The output above shows that the module version 1.21.3 is required for NGINX Plus R25 P1.
 
+- The OpenSSL version, as shown by the openssl version command:
+
+  ```sh
+  # openssl version
+  OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
+  ...
+  ```
+
+  The output above shows that the module version 3.0.2 is required for libinstana_sensor_ssl3x.so.
+
+  ```sh
+  # openssl version
+  OpenSSL 1.1.1f  31 Mar 2020
+  ...
+  ```
+
+  The output above shows that the module version 1.1.1f is required for libinstana_sensor_ssl1.1x.so.
+
 - The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
 - (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on Instana side)
+- The OpenSSL variant of libinstana_sensor.so (either libinstana_sensor_ssl1.1x.so or libinstana_sensor_ssl3x.so) is to support serverless monitoring with OpenSSL 1.1.x and OpenSSL 3.x.x. Choose correct OpenSSL variant for serverless monitoring; otherwise use libinstana_sensor.so.
 
 The list of binaries and download links is available on the [Binaries](binaries.md) page.
 
 ### Copy the Binaries
 
-The two binaries downloaded and extracted in the previous step must be placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
+From the  libinstana_sensor.so and OpenSSL variants of libinstana_sensor.so, choose the correct OpenSSL variant for serverless monitoring; if none is needed, use the standard libinstana_sensor.so.
+Ensure that both the chosen libinstana_sensor.so and ngx_http_opentracing_module.so are placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
 
 If NGINX is running directly on the operating system, as opposed to running in a container, it's usually a good choice to copy the two Instana binaries into the folder that contains the other NGINX modules.
 You can find where NGINX expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
@@ -231,6 +251,10 @@ Indeed, to avoid segfault, the Instana NGINX OpenTracing module is built includi
 The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=kubernetes-instana-autotrace-webhook) can automatically configure distributed tracing for Ingress NGINX and NGINX on Kubernetes and OpenShift.
 
 ## Release History
+
+### 1.10.0 (2024-10-14)
+
+  * New Feature: Integrate serverless monitoring capabilities for NGINX.
 
 ### 1.9.1 (2024-08-22)
 
