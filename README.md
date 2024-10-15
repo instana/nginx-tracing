@@ -77,7 +77,7 @@ The packages that Instana offers depend on:
 
   The output above shows that the module version 1.21.3 is required for NGINX Plus R25 P1.
 
-- The OpenSSL version, as shown by the openssl version command:
+- The OpenSSL version, as shown by the 'openssl version' command:
 
   ```sh
   # openssl version
@@ -85,7 +85,7 @@ The packages that Instana offers depend on:
   ...
   ```
 
-  The output above shows that the module version 3.0.2 is required for libinstana_sensor_ssl3x.so.
+  The output above shows that the module `libinstana_sensor_ssl3x.so` is required for OpenSSL version 3.0.2.
 
   ```sh
   # openssl version
@@ -93,18 +93,18 @@ The packages that Instana offers depend on:
   ...
   ```
 
-  The output above shows that the module version 1.1.1f is required for libinstana_sensor_ssl1.1x.so.
+  The output above shows that the module `libinstana_sensor_ssl1.1x.so` is required for OpenSSL version 1.1.1f.
 
 - The Libc variant used in your distribution (`glibc` or `musl`); you likely use `glibc`, unless you are using Alpine as base-image for your containers, in which case, it's `musl`.
 - (In some cases) the particular distribution (when the build used in some official packages is different enough to require bespoke adjustments on Instana side)
-- The OpenSSL variant of libinstana_sensor.so (either libinstana_sensor_ssl1.1x.so or libinstana_sensor_ssl3x.so) is to support serverless monitoring with OpenSSL 1.1.x and OpenSSL 3.x.x. Choose correct OpenSSL variant for serverless monitoring; otherwise use libinstana_sensor.so.
+- The OpenSSL variant of `libinstana_sensor.so` (either `libinstana_sensor_ssl1.1x.so` or `libinstana_sensor_ssl3x.so`) is to support serverless tracing with OpenSSL 1.1.x or OpenSSL 3.x.x. Choose the correct OpenSSL variant for serverless tracing. Otherwise, use `libinstana_sensor.so`.
 
 The list of binaries and download links is available on the [Binaries](binaries.md) page.
 
 ### Copy the Binaries
 
-From the  libinstana_sensor.so and OpenSSL variants of libinstana_sensor.so, choose the correct OpenSSL variant for serverless monitoring; if none is needed, use the standard libinstana_sensor.so.
-Ensure that both the chosen libinstana_sensor.so and ngx_http_opentracing_module.so are placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
+From the `libinstana_sensor.so` and OpenSSL variants of `libinstana_sensor.so`, choose the correct OpenSSL variant for serverless tracing. If none is needed, use the standard `libinstana_sensor.so`.
+Ensure that both files, the chosen `libinstana_sensor.so` and `ngx_http_opentracing_module.so`, are placed on a filesystem that the NGINX process can access, both in terms of locations as well as file permissions.
 
 If NGINX is running directly on the operating system, as opposed to running in a container, it's usually a good choice to copy the two Instana binaries into the folder that contains the other NGINX modules.
 You can find where NGINX expects the modules to be located by running the `nginx -V` command and look for the `--modules-path` configuration option, see, e.g., [this response on StackOverflow](https://serverfault.com/a/812994).
@@ -254,7 +254,7 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ### 1.10.0 (2024-10-14)
 
-  * New Feature: Integrate serverless monitoring capabilities for NGINX.
+  * New Feature: Integrate serverless tracing capabilities for NGINX.
 
 ### 1.9.1 (2024-08-22)
 
