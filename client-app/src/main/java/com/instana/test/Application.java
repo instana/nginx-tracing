@@ -85,7 +85,7 @@ public class Application {
 		@Autowired
 		private ApiImpl apiImpl;
 
-		@Scheduled(fixedRate=1_000)
+		@Scheduled(fixedRate = 1, initialDelay = 120_000)
 		@Span(value="recurrent-task", type = Span.Type.ENTRY)
 		void issueRequest() {
 			apiImpl.issueRequest();
