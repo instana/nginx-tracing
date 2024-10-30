@@ -106,6 +106,12 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX
 
+### NGINX 1.27.2
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.10.0/linux-amd64-glibc-nginx-1.27.2.zip)
+  * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.10.0/linux-amd64-musl-nginx-1.27.2.zip)
+
 ### NGINX 1.27.1
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
@@ -516,6 +522,15 @@ To download the files, use `_` as the username and a valid agent key as password
   * [Ubuntu 18.04](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.10.0/linux-amd64-glibc-nginx-1.14.0_ubuntu.zip)
 
 ## OpenResty
+
+### OpenResty 1.27.1
+
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
+  * [OpenResty 1.27.1.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.10.0/linux-amd64-glibc-openresty-1.27.1_compat.zip)
+    * Supported only on Amazon Linux and CentOS Stream 9 and later
+
+* [OpenResty DockerHub containers](https://hub.docker.com/r/openresty/openresty)
+  * [OpenResty 1.27.1.1 Debian](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.10.0/linux-amd64-glibc-openresty-1.27.1_compat.zip)
 
 ### OpenResty 1.25.3
 
