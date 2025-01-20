@@ -20,8 +20,7 @@ agent_zone=<name of the zone for the agent; default: nginx-tracing-demo>
 ## Build & Launch
 
 ```bash
-docker-compose build
-docker-compose up
+docker-compose down && docker-compose up --build
 ```
 
 This will build and launch
