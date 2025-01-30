@@ -254,9 +254,8 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 ### 1.11.0 (2025-01-21)
 
   * Add support for NGINX 1.27.3
-  * Add support for opentracing 0.38.0
-  * Add support for nginx-plus R33
-  * Removed the agent header check for the `Server` header in the discovery response.
+  * Add support for NGINX Plus R33
+  * The discovery response is not checked for the agent header `Server` anymore.
 
 ### 1.10.0 (2024-10-14)
 
