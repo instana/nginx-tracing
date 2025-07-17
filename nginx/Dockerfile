@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 AS tracing_dependencies
+FROM ubuntu:22.04 AS tracing_dependencies
 
 RUN set -x \
   && apt-get update \
@@ -29,7 +29,7 @@ RUN download_key=$([ ! -z "${INSTANA_DOWNLOAD_KEY}" ] && echo "${INSTANA_DOWNLOA
     mv ${LIBC_VERSION}-libinstana_sensor.so /opt/instana/nginx/libinstana_sensor.so && \
     mv ${LIBC_VERSION}-nginx-${NGINX_VERSION}-ngx_http_ot_module.so /opt/instana/nginx/ngx_http_opentracing_module.so;
 
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN set -x \
   && apt-get update \
@@ -37,7 +37,7 @@ RUN set -x \
               curl apt-transport-https ca-certificates iproute2 gnupg2
 
 # Add official Nginx repository
-RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ focal nginx" \
+RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ jammy nginx" \
      >> /etc/apt/sources.list \
   && curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add - \
   && apt-get update
