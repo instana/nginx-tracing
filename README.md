@@ -251,6 +251,13 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.12.0 (2025-07-23)
+
+  * Migrate build system to Debian 11 due to Ubuntu 20.04 EOL
+  * Add support for NGINX 1.28.0, 1.27.5, 1.27.4, 1.26.3
+  * Add support for NGINX Plus R34
+  * Add support for Ingress NGINX controller until 1.13.0
+
 ### 1.11.0 (2025-01-21)
 
   * Add support for NGINX 1.27.3
