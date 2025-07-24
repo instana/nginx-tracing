@@ -36,8 +36,10 @@ RUN set -x \
   && apt-get install --no-install-recommends --no-install-suggests -y \
               curl apt-transport-https ca-certificates iproute2 gnupg2
 
-# Add official Nginx repository
+# Add official Nginx repositories
 RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ jammy nginx" \
+     >> /etc/apt/sources.list \
+  && echo "deb http://nginx.org/packages/ubuntu/ jammy nginx" \
      >> /etc/apt/sources.list \
   && curl -fsSL https://nginx.org/keys/nginx_signing.key | apt-key add - \
   && apt-get update
