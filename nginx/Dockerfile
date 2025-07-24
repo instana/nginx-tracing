@@ -34,7 +34,7 @@ FROM ubuntu:22.04
 RUN set -x \
   && apt-get update \
   && apt-get install --no-install-recommends --no-install-suggests -y \
-              curl apt-transport-https ca-certificates iproute2 gnupg2
+              curl apt-transport-https ca-certificates iproute2 gnupg2 cron libpopt0 logrotate
 
 # Add official Nginx repositories
 RUN echo "deb http://nginx.org/packages/mainline/ubuntu/ jammy nginx" \
