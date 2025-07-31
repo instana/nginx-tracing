@@ -1,7 +1,25 @@
 version: '3'
 services:
 
-  client-app:
+  server-app:
+    build:
+      context: ./server-app
+    networks:
+      nginxmesh:
+        aliases:
+          - server-app
+    environment:
+      - INSTANA_DEV=1
+      - SERVER_PORT=8080
+    healthcheck:
+      test: ["CMD", "ping", "localhost:8080"]
+      interval: 8s
+      timeout: 30s
+      retries: 25
+    expose:
+      - "8080"
+
+  client-app-1:
     build:
       context: ./client-app
     networks:
@@ -9,6 +27,114 @@ services:
     environment:
       - INSTANA_DEV=1
       - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-2:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-3:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-4:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-5:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-6:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-7:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-8:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
+
+  client-app-9:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+
+  client-app-10:
+    build:
+      context: ./client-app
+    networks:
+      - nginxmesh
+    environment:
+      - INSTANA_DEV=1
+      - target_url=http://nginx-gateway:8080/nginx-demo
+    depends_on:
+      agent:
+        condition: service_healthy
 
   nginx:
     build:
@@ -24,24 +150,14 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/instana-config.json:/etc/instana-config.json
-      # Instana developers only: Include the following lines to override the nginx module, for local testing
-      #- ./nginx/ngx_http_opentracing_module.so:/opt/instana/nginx/ngx_http_opentracing_module.so:ro
-      #- ./nginx/ngx_http_opentracing_module.so:/usr/lib/nginx/modules/ngx_http_opentracing_module.so:ro
+      # Include the following lines to override the nginx module, for local testing
+      # - ./nginx/ngx_http_opentracing_module.so:/opt/instana/nginx/ngx_http_opentracing_module.so:ro
+      # - ./nginx/ngx_http_opentracing_module.so:/usr/lib/nginx/modules/ngx_http_opentracing_module.so:ro
     expose:
       - "8080"
-
-  server-app:
-    build:
-      context: ./server-app
-    networks:
-      nginxmesh:
-        aliases:
-          - server-app
-    environment:  
-      - INSTANA_DEV=1
-      - SERVER_PORT=8080
-    expose:
-      - "8080"
+    depends_on:
+      agent:
+        condition: service_healthy
 
   agent:
     image: icr.io/instana/agent
@@ -64,6 +180,9 @@ services:
       - INSTANA_DOWNLOAD_KEY=${download_key}
       - INSTANA_AGENT_KEY=${agent_key}
       - INSTANA_AGENT_ZONE=${agent_zone:-nginx-tracing-demo}
+    depends_on:
+      server-app:
+        condition: service_started
     healthcheck:
       test: ["CMD", "curl", "localhost:42699"]
       interval: 8s
