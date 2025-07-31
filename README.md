@@ -438,6 +438,21 @@ strings ${NGINX_BINARY_OR_MODULE_PATH} | grep "^[0-9],[0-9],[0-9],[0-1]\{34\}$"
 
 The typical binary signature with compatibility is `8,4,8,0011111111010111001111111111111111`.
 
+It is possible that we do not provide support for your NGINX variant yet.
+Please report a feature request with your binary signature and the used container base image in that case.
+
+When there's a difference in the compile flags used between our Instana-built
+binaries modules (`libinstana_sensor.so` and `ngx_http_ot_module.so`) and the
+core NGINX component, you would get an error that is similar to this:
+
+```
+module "/usr/share/nginx/modules-available/glibc-nginx-1.14.2-ngx_http_ot_module.so" is not binary compatible in /etc/nginx/nginx.conf:5
+```
+
+The currently available binaries for the different "flavors" (different
+compile flags corresponding to different distributions), are found
+[here](./binaries.md)
+
 ### Debug Logging Libinstana_sensor
 
 Just insert the following line in the middle of the config in `instana-config.json`:
