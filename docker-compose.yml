@@ -27,6 +27,8 @@ services:
       # Instana developers only: Include the following lines to override the nginx module, for local testing
       #- ./nginx/ngx_http_opentracing_module.so:/opt/instana/nginx/ngx_http_opentracing_module.so:ro
       #- ./nginx/ngx_http_opentracing_module.so:/usr/lib/nginx/modules/ngx_http_opentracing_module.so:ro
+    environment:
+      - INSTANA_DEV=1
     expose:
       - "8080"
 
