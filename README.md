@@ -251,6 +251,10 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.14.1 (2026-03-19)
+
+   * Add support for NGINX versions from 1.24.0 to 1.29.6 in aarch64, s390x and ppc64le architectures. 
+
 ### 1.12.0 (2025-07-23)
 
   * Migrate build system to Debian 11 due to Ubuntu 20.04 EOL
