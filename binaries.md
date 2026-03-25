@@ -304,6 +304,7 @@ In the following list, *Glibc based Linux* stands Linux versions that use Glibc 
   * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.2.zip)
   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.2.zip)
   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.2.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.27.2.zip)
 
 ### NGINX 1.27.1
 
