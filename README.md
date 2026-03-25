@@ -251,6 +251,10 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.14.2 (2026-03-25)
+
+   * Bug fix: Add missing artifact for musl variant of NGINX version 1.27.2 in s390x architecture.
+
 ### 1.14.1 (2026-03-19)
 
    * Add support for NGINX versions from 1.24.0 to 1.29.6 in aarch64, s390x and ppc64le architectures. 
