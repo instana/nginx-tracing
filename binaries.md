@@ -14,6 +14,27 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX Plus
 
+### NGINX Plus R35
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.0.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.0.zip)
+
+### NGINX Plus R34
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.4.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.4.zip)
+
+### NGINX Plus R33
+
+In the following list, *Glibc based Linux* stands for Linux versions that use Glibc 2.25 and later.
+{: note}
+
+* [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.2.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.2.zip)
+
 ### NGINX Plus R32
 
 * [NGINX Plus Official Repository](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-plus/):
@@ -106,29 +127,237 @@ To download the files, use `_` as the username and a valid agent key as password
 
 ## NGINX
 
+In the following list, *Glibc based Linux* stands Linux versions that use Glibc 2.25 and later.
+
+### NGINX 1.29.6
+
+* [NGINX official repository](http://nginx.org/en/linux_packages.html):
+   * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.6.zip)
+   * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.6.zip)
+   * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.6.zip)
+   * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.6.zip)
+   * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.6.zip)
+   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.6.zip)
+   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.6.zip)
+   * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.6.zip)
+
+### NGINX 1.29.5
+
+* [NGINX official repository](http://nginx.org/en/linux_packages.html):
+   * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.5.zip)
+   * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.5.zip)
+   * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.5.zip)
+   * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.5.zip)
+   * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.5.zip)
+   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.5.zip)
+   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.5.zip)
+   * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.5.zip)
+
+### NGINX 1.29.4
+
+* [NGINX official repository](http://nginx.org/en/linux_packages.html):
+   * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.4.zip)
+   * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.4.zip)
+   * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.4.zip)
+   * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.4.zip)
+   * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.4.zip)
+   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.4.zip)
+   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.4.zip)
+   * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.4.zip)
+
+### NGINX 1.29.3
+
+* [NGINX official repository](http://nginx.org/en/linux_packages.html):
+   * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.3.zip)
+   * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.3.zip)
+   * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.3.zip)
+   * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.3.zip)
+   * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.3.zip)
+   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.3.zip)
+   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.3.zip)
+   * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.3.zip)
+
+### NGINX 1.29.2
+
+* [NGINX official repository](http://nginx.org/en/linux_packages.html):
+   * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.2.zip)
+   * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.2.zip)
+   * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.2.zip)
+   * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.2.zip)
+   * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.2.zip)
+   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.2.zip)
+   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.2.zip)
+   * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.2.zip)
+
+### NGINX 1.29.1
+
+* [NGINX official repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.1.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.1.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.1.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.1.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.1.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.1.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.1.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.1.zip)
+
+### NGINX 1.29.0
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.29.0.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.29.0.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.29.0.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.29.0.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.29.0.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.29.0.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.29.0.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.29.0.zip)
+
+## NGINX 1.28.2
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.28.2.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.28.2.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.28.2.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.28.2.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.28.2.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.28.2.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.28.2.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.28.2.zip)
+
+* [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
+  * [amd64 Alpine Linux 3.22, 3.23](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.28.2_alpquic.zip)
+  * [aarch64 Alpine Linux 3.22, 3.23](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.28.2_alpquic.zip)
+  * [ppc64le Alpine Linux 3.22, 3.23](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.28.2_alpquic.zip)
+  * [s390x Alpine Linux 3.22, 3.23](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.28.2_alpquic.zip)
+
+### NGINX 1.28.1
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.28.1.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.28.1.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.28.1.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.28.1.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.28.1.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.28.1.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.28.1.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.28.1.zip)
+
+### NGINX 1.28.0
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.28.0.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.28.0.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.28.0.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.28.0.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.28.0.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.28.0.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.28.0.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.28.0.zip)
+
+* [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
+  * [amd64 Alpine Linux 3.22, 3.23](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.28.0_alpquic.zip)
+
+### NGINX 1.27.5
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.5.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.5.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.27.5.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.27.5.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.5.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.5.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.5.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.27.5.zip)
+
+### NGINX 1.27.4
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.4.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.4.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.27.4.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.27.4.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.4.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.4.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.4.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.27.4.zip)
+
+### NGINX 1.27.3
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.3.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.3.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.27.3.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.27.3.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.3.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.3.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.3.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.27.3.zip)
+
 ### NGINX 1.27.2
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.2.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.2.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.27.2.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.27.2.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.2.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.2.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.2.zip)
 
 ### NGINX 1.27.1
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.1.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.1.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.27.1.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.27.1.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.1.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.1.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.1.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.27.1.zip)
 
 ### NGINX 1.27.0
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.27.0.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.27.0.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.27.0.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.27.0.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.27.0.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.27.0.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.27.0.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.27.0.zip)
+
+### NGINX 1.26.3
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.26.3.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.3.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.26.3.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.26.3.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.26.3.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.26.3.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.26.3.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.26.3.zip)
+
+* [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
+  * [amd64 Alpine Linux 3.20, 3.21](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.3_alpine.zip)
+  * [aarch64 Alpine Linux 3.20, 3.21](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.26.3_alpine.zip)
+  * [ppc64le Alpine Linux 3.20, 3.21](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.26.3_alpine.zip)
+  * [s390x Alpine Linux 3.20, 3.21](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.26.3_alpine.zip)
 
 ### NGINX 1.26.2
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.26.2.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.2.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.26.2.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.26.2.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.26.2.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.26.2.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.26.2.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.26.2.zip)
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
   * [Alpine Linux 3.20, 3.21](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.2_alpine.zip)
@@ -138,6 +367,12 @@ To download the files, use `_` as the username and a valid agent key as password
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.26.1.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.1.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.26.1.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.26.1.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.26.1.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.26.1.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.26.1.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.26.1.zip)
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
   * [Alpine Linux 3.20, 3.21](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.1_alpine.zip)
@@ -147,30 +382,60 @@ To download the files, use `_` as the username and a valid agent key as password
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.26.0.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.26.0.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.26.0.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.26.0.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.26.0.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.26.0.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.26.0.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.26.0.zip)
 
 ### NGINX 1.25.5
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.25.5.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.25.5.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.25.5.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.25.5.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.25.5.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.25.5.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.25.5.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.25.5.zip)
 
 ### NGINX 1.25.4
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.25.4.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.25.4.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.25.4.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.25.4.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.25.4.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.25.4.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.25.4.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.25.4.zip)
 
 ### NGINX 1.25.3
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.25.3.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.25.3.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.25.3.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.25.3.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.25.3.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.25.3.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.25.3.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.25.3.zip)
 
 ### NGINX 1.25.2
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.25.2.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.25.2.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.25.2.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.25.2.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.25.2.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.25.2.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.25.2.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.25.2.zip)
 
 
 ### NGINX 1.25.1
@@ -178,18 +443,36 @@ To download the files, use `_` as the username and a valid agent key as password
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.25.1.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.25.1.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.25.1.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.25.1.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.25.1.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.25.1.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.25.1.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.25.1.zip)
 
 ### NGINX 1.25.0
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.25.0.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.25.0.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.25.0.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.25.0.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.25.0.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.25.0.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.25.0.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.25.0.zip)
 
 ### NGINX 1.24.0
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
   * [Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-glibc-nginx-1.24.0.zip)
   * [Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-amd64-musl-nginx-1.24.0.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-glibc-nginx-1.24.0.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-aarch64-musl-nginx-1.24.0.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-glibc-nginx-1.24.0.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-ppc64le-musl-nginx-1.24.0.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-glibc-nginx-1.24.0.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.2/linux-s390x-musl-nginx-1.24.0.zip)
 
 ### NGINX 1.23.4
 
