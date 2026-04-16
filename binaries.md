@@ -807,6 +807,15 @@ In the following list, *Glibc based Linux* stands Linux versions that use Glibc 
 
 ## OpenResty
 
+### OpenResty 1.29.2
+
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
+  * [OpenResty 1.29.2.1 .. 1.29.2.3](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.3/linux-amd64-glibc-openresty-1.29.2_compat.zip)
+    * Supported only on Amazon Linux and CentOS Stream 9 and later
+
+* [OpenResty DockerHub containers](https://hub.docker.com/r/openresty/openresty)
+  * [OpenResty 1.29.2.2 .. 1.29.2.3 Debian](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.3/linux-amd64-glibc-openresty-1.29.2_compat.zip)
+
 ### OpenResty 1.27.1
 
 * [OpenResty Repository](https://openresty.org/en/linux-packages.html):
