@@ -251,6 +251,10 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.14.3 (2026-04-16)
+
+   * Add support for OpenResty 1.29.2.1 .. 1.29.2.3
+
 ### 1.14.2 (2026-03-25)
 
    * Bug fix: Add missing artifact for musl variant of NGINX version 1.27.2 in s390x architecture.
