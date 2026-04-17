@@ -254,6 +254,7 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 ### 1.14.3 (2026-04-16)
 
    * Add support for OpenResty 1.29.2.1 .. 1.29.2.3
+   * Add support for NGINX Plus R36
 
 ### 1.14.2 (2026-03-25)
 
