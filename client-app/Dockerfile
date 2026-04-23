@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-slim AS nginx-tracing-client-app-build
+FROM amd64/openjdk:11-jdk-slim AS nginx-tracing-client-app-build
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y && apt-get install -y --no-install-recommends --no-install-suggests \
@@ -9,7 +9,7 @@ WORKDIR /opt/client-app/
 COPY . .
 RUN ./mvnw clean package
 
-FROM openjdk:11-jre-slim
+FROM amd64/openjdk:11-jre-slim
 
 VOLUME /tmp
 WORKDIR /opt/client-app/
