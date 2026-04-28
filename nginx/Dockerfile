@@ -23,7 +23,8 @@ RUN download_key=$([ ! -z "${INSTANA_DOWNLOAD_KEY}" ] && echo "${INSTANA_DOWNLOA
     sensor_version=$(lynx -auth _:${download_key} -dump -listonly ${ARTI_PATH} | grep -o 'https:.*/[0-9]\+\.[0-9]\+\.[0-9]\+/' | rev | cut -d '/' -f 2 | rev | sort -V | tail -n1); \
     echo "Using sensor version ${sensor_version} for NGINX ${NGINX_VERSION}."; \
     tmp_file="tmp.zip"; tmp_dir="/tmp/nginx_tracing"; mkdir -p "${tmp_dir}" && cd "${tmp_dir}" && \
-    curl --user _:${download_key} --silent --output ${tmp_file} ${ARTI_PATH}${sensor_version}/linux-amd64-${LIBC_VERSION}-nginx-${NGINX_VERSION}.zip --fail && \
+    ngx_arch="$(uname -m)" && if [ "$ngx_arch" = "x86_64" ]; then ngx_arch="amd64"; fi; echo "CPU arch: ${ngx_arch}"; \
+    curl --user _:${download_key} --silent --output ${tmp_file} ${ARTI_PATH}${sensor_version}/linux-${ngx_arch}-${LIBC_VERSION}-nginx-${NGINX_VERSION}.zip --fail && \
     unzip ${tmp_file} && \
     mkdir -p /opt/instana/nginx && \
     mv ${LIBC_VERSION}-libinstana_sensor.so /opt/instana/nginx/libinstana_sensor.so && \
