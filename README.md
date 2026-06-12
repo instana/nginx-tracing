@@ -252,6 +252,12 @@ The Instana [AutoTrace WebHook](https://www.ibm.com/docs/en/obi/current?topic=ku
 
 ## Release History
 
+### 1.14.4 (2026-04-16)
+
+   * Add support for NGINX  1.30.1 and 1.31.0
+   * Add support for NGINX Plus PLS.37.0.0.1  and PLS.37.0.1.1
+   * Fixed connection issue on serverless endpoint
+
 ### 1.14.3 (2026-04-16)
 
    * Add support for OpenResty 1.29.2.1 .. 1.29.2.3
