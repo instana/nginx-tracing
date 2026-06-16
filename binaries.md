@@ -141,6 +141,18 @@ In the following list, *Glibc based Linux* stands for Linux versions that use Gl
 
 In the following list, *Glibc based Linux* stands Linux versions that use Glibc 2.25 and later.
 
+## NGINX 1.31.1
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-nginx-1.31.1.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-musl-nginx-1.31.1.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-aarch64-glibc-nginx-1.31.1.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-aarch64-musl-nginx-1.31.1.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-ppc64le-glibc-nginx-1.31.1.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-ppc64le-musl-nginx-1.31.1.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-glibc-nginx-1.31.1.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-musl-nginx-1.31.1.zip)
+
 ## NGINX 1.31.0
 
 * [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
@@ -152,6 +164,24 @@ In the following list, *Glibc based Linux* stands Linux versions that use Glibc 
   * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-ppc64le-musl-nginx-1.31.0.zip)
   * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-glibc-nginx-1.31.0.zip)
   * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-musl-nginx-1.31.0.zip)
+
+## NGINX 1.30.2
+
+* [NGINX Official Repository](http://nginx.org/en/linux_packages.html):
+  * [amd64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-nginx-1.30.2.zip)
+  * [amd64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-musl-nginx-1.30.2.zip)
+  * [aarch64 Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-aarch64-glibc-nginx-1.30.2.zip)
+  * [aarch64 Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-aarch64-musl-nginx-1.30.2.zip)
+  * [ppc64le Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-ppc64le-glibc-nginx-1.30.2.zip)
+  * [ppc64le Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-ppc64le-musl-nginx-1.30.2.zip)
+  * [s390x Glibc based Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-glibc-nginx-1.30.2.zip)
+  * [s390x Alpine Linux](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-musl-nginx-1.30.2.zip)
+
+* [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages):
+  * [amd64 Alpine Linux 3.22, 3.23, 3.24](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-musl-nginx-1.30.2.zip)
+  * [aarch64 Alpine Linux 3.22, 3.23, 3.24](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-aarch64-musl-nginx-1.30.2.zip)
+  * [ppc64le Alpine Linux 3.22, 3.23, 3.24](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-ppc64le-musl-nginx-1.30.2.zip)
+  * [s390x Alpine Linux 3.22, 3.23, 3.24](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-s390x-musl-nginx-1.30.2.zip)
 
 ## NGINX 1.30.1
 
@@ -903,14 +933,23 @@ In the following list, *Glibc based Linux* stands Linux versions that use Glibc 
 
 ## OpenResty
 
-### OpenResty 1.29.2
+### OpenResty 1.31.1
 
 * [OpenResty Repository](https://openresty.org/en/linux-packages.html):
-  * [OpenResty 1.29.2.1 .. 1.29.2.3](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-openresty-1.29.2_compat.zip)
+  * [OpenResty 1.31.1.1](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-openresty-1.31.1_compat.zip)
     * Supported only on Amazon Linux and CentOS Stream 9 and later
 
 * [OpenResty DockerHub containers](https://hub.docker.com/r/openresty/openresty)
-  * [OpenResty 1.29.2.2 .. 1.29.2.3 Debian](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-openresty-1.29.2_compat.zip)
+  * [OpenResty 1.31.1.1 Debian](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-openresty-1.31.1_compat.zip)
+
+### OpenResty 1.29.2
+
+* [OpenResty Repository](https://openresty.org/en/linux-packages.html):
+  * [OpenResty 1.29.2.1 .. 1.29.2.5](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-openresty-1.29.2_compat.zip)
+    * Supported only on Amazon Linux and CentOS Stream 9 and later
+
+* [OpenResty DockerHub containers](https://hub.docker.com/r/openresty/openresty)
+  * [OpenResty 1.29.2.2 .. 1.29.2.5 Debian](https://artifact-public.instana.io/artifactory/shared/com/instana/nginx_tracing/1.14.4/linux-amd64-glibc-openresty-1.29.2_compat.zip)
 
 ### OpenResty 1.27.1
 
